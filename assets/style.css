@@ -5,6 +5,20 @@
     margin: auto;
 }
 
+.logotitle {
+    margin: auto;
+}
+
+.catchtitle {
+    margin: auto;
+}
+
+.bardivider {
+    width: 80%; /* largeur de la barre */
+    height: 2px; /* hauteur de la barre */
+    background-color: #ccc; /* couleur de fond de la barre */
+    margin: auto;
+}
 
 
 #sidebar {

@@ -2,7 +2,7 @@
 title: Disrupting the Attention-based Economy
 date: 2020-10-26
 author: Brennan K. Brown
-layout: post
+layout: layout_post
 tags:
   - Productivity
   - Habits

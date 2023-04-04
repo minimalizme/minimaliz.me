@@ -1,12 +1,1 @@
-title: minimaliz.me
-description: Description
 
-#ajouter un nouvel emplacement de lien dans le menu
-header_pages:
-  - about.md
-
-# Configuration de la barre latérale
-sidebar:
-  - title: Derniers articles
-    url: /blog/
-    children: true

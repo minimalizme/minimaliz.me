@@ -1,0 +1,1 @@
+Minimaliz.me Blog

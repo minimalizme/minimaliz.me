@@ -2,4 +2,26 @@
 layout: layout_home
 ---
 
-My content
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      {% for post in site.posts %}
+        <div class="post-preview">
+          <a href="{{ post.url | relative_url }}">
+            <h2 class="post-title">{{ post.title }}</h2>
+            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+          </a>
+          <p class="post-meta">
+            Publié le {{ post.date | date_to_string }}
+          </p>
+        </div>
+        <hr>
+      {% endfor %}
+    </div>
+    <div class="col-md-4">
+      <div class="sidebar">
+        {% include sidebar.html %}
+      </div>
+    </div>
+  </div>
+</div>

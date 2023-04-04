@@ -1,8 +1,8 @@
-.ul {
+ul {
     list-style:none;
 }
 
-.li {
+li {
     display: inline-block;
     margin-right:20px;
 }
@@ -30,13 +30,19 @@
 }
 
 
-#sidebar {
-    float:left;
-
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #postslist {
-    float:right;
+    width: 70%;
+}
+
+#sidebar {
+    width: 30%;
+
 }
 
 #footer {

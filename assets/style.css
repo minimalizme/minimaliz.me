@@ -1,5 +1,4 @@
 .logo {
-    background-image: url("logo.svg");
     width: 200px;
     height: 300px;
     margin: auto;
@@ -15,7 +14,7 @@
 
 .bardivider {
     width: 80%; /* largeur de la barre */
-    height: 2px; /* hauteur de la barre */
+    height: 1px; /* hauteur de la barre */
     background-color: #ccc; /* couleur de fond de la barre */
     margin: auto;
 }

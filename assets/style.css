@@ -4,3 +4,18 @@
     height: 300px;
     margin: auto;
 }
+
+
+
+#sidebar {
+    float:left;
+
+}
+
+#postslist {
+    float:right;
+}
+
+#footer {
+    float: none;
+}

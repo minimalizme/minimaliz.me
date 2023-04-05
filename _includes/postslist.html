@@ -44,7 +44,7 @@
         </div>
 
         <div id="post-list">
-            {% for post in site.posts %}
+            {% for post in pagination.posts %}
             <article class="post" data-tags="{{ post.tags | join: ' ' }}" style="display:none;">
                 
                 <a href="{{ post.url | relative_url }}" class="article-title">{{ post.title }}</a>

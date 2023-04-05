@@ -6,12 +6,11 @@
             <div class="separator"></div>
             <p class="article-info">{{ post.date | date: "%d %B %Y" }}</p>
             
-            {% assign first_image_regex = '<img [^>]*src="([^"]*)"[^>]*>' %}
-                {% assign first_image_match = post.content | replace_regex: first_image_regex, '$1' %}
-                {% assign first_image_url = first_image_match | split: ' ' | first %}
-                {% if first_image_url != post.content %}
-                  <img src="{{ first_image_url }}" alt="{{ post.title }}" />
-            {% endif %}
+            {% assign content_blocks = post.content | split: '&lt;img' %}
+                {% if content_blocks.size > 1 %}
+                  {% assign first_image = content_blocks[1] | split: '>' | first %}
+                  <img{{ first_image }}>
+                {% endif %}
             
             {% assign excerpt = post.content | strip_html | truncatewords: 30 %}
             <p class="summary">{{ excerpt }}</p>

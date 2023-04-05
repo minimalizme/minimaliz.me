@@ -5,8 +5,17 @@
             <a href="{{ post.url | relative_url }}" class="article-title">{{ post.title }}</a>
             <div class="separator"></div>
             <p class="article-info">{{ post.date | date: "%d %B %Y" }}</p>
-            <!--<img src="assets/article1.jpg" alt="Image de l'article 1">-->
-            <p class="summary">{{ post.excerpt }}</p>
+            {% assign image_found = false %}
+                {% for img in post.content | split: ' ' %}
+                  {% if img contains 'img' and image_found == false %}
+                    {% assign image_found = true %}
+                    {{ img }}
+                  {% endif %}
+                {% endfor %}
+            <p class="summary">
+            {% assign excerpt = post.content | strip_html | truncatewords: 50 %}
+            {{ excerpt }}
+            </p>
         </article>
         {% endfor %}
         <div class="pagination">

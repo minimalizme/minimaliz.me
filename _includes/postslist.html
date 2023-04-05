@@ -44,8 +44,8 @@
         </div>
 
         <div id="post-list">
-            {% for post in paginator.posts %}
-            <article class="post" data-tags="{{ post.tags | join: ' ' }}">
+            {% for post in site.posts %}
+            <article class="post" data-tags="{{ post.tags | join: ' ' }}" style="display:none;">
                 
                 <a href="{{ post.url | relative_url }}" class="article-title">{{ post.title }}</a>
                 <div class="separator"></div>
@@ -75,39 +75,62 @@
         </div>
     </div>
 
-
 <script>
-        function filterPosts() {
-            let searchQuery = $('#search-input').val().toLowerCase();
-            let checkedTags = $('input[type=checkbox]:checked').map(function() {
-                return this.value;
-            }).get();
+            const postsPerPage = 2;
+            let currentPage = 1;
+            let allPosts = $('.post');
 
-            let filteredPosts = $('.post').filter(function() {
-                let postTags = $(this).data('tags').split(' ');
-                let hasTag = checkedTags.every(tag => postTags.includes(tag));
-                let postTitle = $(this).find('.article-title').text().toLowerCase();
-                let searchMatch = searchQuery === "" || postTitle.includes(searchQuery);
-
-                return hasTag && searchMatch;
-            });
-
-            if (searchQuery !== "" || checkedTags.length > 0) {
-                $('.pagination').hide();
-                $('.post').hide();
-                filteredPosts.show();
-            } else {
-                $('.pagination').show();
-                $('.post').hide();
-                {% for post in paginator.posts %}
-                $('article[data-tags="{{ post.tags | join: ' ' }}"]').show();
-                {% endfor %}
+            function updatePosts() {
+                allPosts.hide();
+                let startIndex = (currentPage - 1) * postsPerPage;
+                let endIndex = startIndex + postsPerPage;
+                allPosts.slice(startIndex, endIndex).show();
             }
-        }
 
-        $(document.ready(function() {
-            // Handlers d'événements
-            $('#search-input').on('input', filterPosts);
-            $('input[type=checkbox]').on('change', filterPosts);
-        });
-    </script>
+            function filterPosts() {
+                let searchQuery = $('#search-input').val().toLowerCase();
+                let checkedTags = $('input[type=checkbox]:checked').map(function() {
+                    return this.value;
+                }).get();
+
+                let filteredPosts = allPosts.filter(function() {
+                    let postTags = $(this).data('tags').split(' ');
+                    let hasTag = checkedTags.every(tag => postTags.includes(tag));
+                    let postTitle = $(this).find('.article-title').text().toLowerCase();
+                    let searchMatch = searchQuery === "" || postTitle.includes(searchQuery);
+
+                    return hasTag && searchMatch;
+                });
+
+                if (searchQuery !== "" || checkedTags.length > 0) {
+                   
+                   $('.pagination').hide();
+                    allPosts.hide();
+                    filteredPosts.show();
+                } else {
+                    $('.pagination').show();
+                    updatePosts();
+                }
+            }
+
+            $(document).ready(function() {
+                // Affiche les articles initiaux en fonction de la pagination
+                updatePosts();
+
+                // Handlers d'événements
+                $('#search-input').on('input', filterPosts);
+                $('input[type=checkbox]').on('change', filterPosts);
+
+                $('.pagination a').on('click', function(e) {
+                    e.preventDefault();
+                    let linkText = $(this).text();
+                    if (linkText === "« Précédent") {
+                        currentPage--;
+                    } else if (linkText === "Suivant »") {
+                        currentPage++;
+                    }
+                    updatePosts();
+                });
+            });
+        </script>
+

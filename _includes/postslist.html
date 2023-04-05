@@ -96,30 +96,31 @@
             }
         }
 
-        function filterPosts() {
-            let searchQuery = $('#search-input').val().toLowerCase();
-            let checkedTags = $('input[type=checkbox]:checked').map(function() {
-                return this.value;
-            }).get();
+    
+    function filterPosts() {
+        let searchQuery = $('#search-input').val().toLowerCase();
+        let checkedTags = $('input[type=checkbox]:checked').map(function() {
+            return this.value;
+        }).get();
 
-            let filteredPosts = allPosts.filter(function() {
-                let postTags = $(this).data('tags').split(' ');
-                let hasTag = checkedTags.every(tag => postTags.includes(tag));
-                let postTitle = $(this).find('.article-title').text().toLowerCase();
-                let searchMatch = searchQuery === "" || postTitle.includes(searchQuery);
+        let filteredPosts = allPosts.filter(function() {
+            let postTags = $(this).data('tags').split(' ');
+            let hasTag = checkedTags.length === 0 || checkedTags.some(tag => postTags.includes(tag));
+            let postTitle = $(this).find('.article-title').text().toLowerCase();
+            let searchMatch = searchQuery === "" || postTitle.includes(searchQuery);
 
-                return hasTag && searchMatch;
-            });
+            return hasTag && searchMatch;
+        });
 
-            if (searchQuery !== "" || checkedTags.length > 0) {
-                $('.pagination').hide();
-                allPosts.hide();
-                filteredPosts.show();
-            } else {
-                $('.pagination').show();
-                updatePosts();
-            }
+        if (searchQuery !== "" || checkedTags.length > 0) {
+            $('.pagination').hide();
+            allPosts.hide();
+            filteredPosts.show();
+        } else {
+            $('.pagination').show();
+            updatePosts();
         }
+    }
 
         $(document).ready(function() {
             // Affiche les articles initiaux en fonction de la pagination

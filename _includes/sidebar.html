@@ -4,4 +4,13 @@
     <p class="name">Ben</p>
     <p class="info">Entrepreneur dans la tech, coach et auteur dans les domaines du minimalisme et du développement personnel.<br><br>Je vous aide à trouver les outils qui vous sont utiles pour vous et vous seul !<br><br>Le minimalisme n'est pas une mode ou un but à atteindre, mais un bon outil pour entreprendre et optimiser sa vie.<br><br>Pour me contacter, envoyez-moi un message privé sur Instagram.</p>
     </div>
+    
+    <div class="filter">
+      <select id="tagFilter">
+        <option value="">Tous les tags</option>
+        {% for tag in site.tags %}
+          <option value="{{ tag[0] }}">{{ tag[0] }}</option>
+        {% endfor %}
+      </select>
+    </div>
 </aside>

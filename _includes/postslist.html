@@ -44,7 +44,7 @@
         </div>
 
         <div id="post-list">
-            {% for post in pagination.posts %}
+            {% for post in site.posts %}
             <article class="post" data-tags="{{ post.tags | join: ' ' }}" style="display:none;">
                 
                 <a href="{{ post.url | relative_url }}" class="article-title">{{ post.title }}</a>
@@ -68,14 +68,6 @@
         <div class="pagination">
             <a href="#" id="prev">&laquo; Précédent</a>
             <a href="#" id="next">Suivant &raquo;</a>
-            <!--
-            {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Précédent</a>
-            {% endif %}
-            {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path | relative_url }}">Suivant &raquo;</a>
-            {% endif %}
-            -->
         </div>
     </div>
 
@@ -104,7 +96,30 @@
             }
         }
 
-        // Le reste du code JavaScript reste inchangé
+        function filterPosts() {
+            let searchQuery = $('#search-input').val().toLowerCase();
+            let checkedTags = $('input[type=checkbox]:checked').map(function() {
+                return this.value;
+            }).get();
+
+            let filteredPosts = allPosts.filter(function() {
+                let postTags = $(this).data('tags').split(' ');
+                let hasTag = checkedTags.every(tag => postTags.includes(tag));
+                let postTitle = $(this).find('.article-title').text().toLowerCase();
+                let searchMatch = searchQuery === "" || postTitle.includes(searchQuery);
+
+                return hasTag && searchMatch;
+            });
+
+            if (searchQuery !== "" || checkedTags.length > 0) {
+                $('.pagination').hide();
+                allPosts.hide();
+                filteredPosts.show();
+            } else {
+                $('.pagination').show();
+                updatePosts();
+            }
+        }
 
         $(document).ready(function() {
             // Affiche les articles initiaux en fonction de la pagination

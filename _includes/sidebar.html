@@ -5,11 +5,11 @@
     <p class="info">Entrepreneur dans la tech, coach et auteur dans les domaines du minimalisme et du développement personnel.<br><br>Je vous aide à trouver les outils qui vous sont utiles pour vous et vous seul !<br><br>Le minimalisme n'est pas une mode ou un but à atteindre, mais un bon outil pour entreprendre et optimiser sa vie.<br><br>Pour me contacter, envoyez-moi un message privé sur Instagram.</p>
     </div>
     
-    <input type="text" id="search" placeholder="Recherche...">
-          <div id="tags-container">
-            {% assign tags = site.tags | sort %}
-            {% for tag in tags %}
-              <a href="{{ site.baseurl }}/tag/{{ tag[0] }}" class="tag">{{ tag[0] }}</a>
+    <input type="text" id="search-input" placeholder="Rechercher...">
+        <div id="tag-list">
+            {% for tag in site.tags %}
+            <input type="checkbox" id="{{ tag[0] }}" name="{{ tag[0] }}" value="{{ tag[0] }}">
+            <label for="{{ tag[0] }}">{{ tag[0] }}</label>
             {% endfor %}
         </div>
 </aside>

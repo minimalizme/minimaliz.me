@@ -1,3 +1,49 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Site branding */
+#site-branding {
+    text-align:center;
+}
+
+.logo {
+    position:fixed;
+    max-width: 100%;
+    width: 100px;
+    height: auto;
+    margin-bottom: -10px;
+}
+
+.logotitle {
+    font-size: 2.4rem;
+    font-family: "Lato",
+    sans-serif;line-height: 1;
+    text-transform: uppercase;
+}
+
+.catchtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: .667rem;
+    letter-spacing: .2em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Menu */
+.bardivider {
+    width: 80%; /* largeur de la barre */
+    height: 1px; /* hauteur de la barre */
+    background-color: #ccc; /* couleur de fond de la barre */
+    margin: auto;
+}
+
+
+nav {
+    text-align:center;
+}
+
 ul {
     list-style:none;
 }
@@ -7,29 +53,7 @@ li {
     margin-right:20px;
 }
 
-
-.logo {
-    max-width: 30px;
-    max-height: 10px;
-    margin: auto;
-    margin-bottom: 30px;
-}
-
-.logotitle {
-    text-align:center;
-}
-
-.catchtitle {
-    text-align:center;
-}
-
-.bardivider {
-    width: 80%; /* largeur de la barre */
-    height: 1px; /* hauteur de la barre */
-    background-color: #ccc; /* couleur de fond de la barre */
-    margin: auto;
-}
-
+/* Body */
 
 .container {
   display: flex;
@@ -46,7 +70,13 @@ li {
 
 }
 
+/* Footer */
+
 #footer {
     float: none;
     
 }
+
+
+
+/*color gold  #947B37*/

@@ -13,7 +13,7 @@
                   {% endif %}
                 {% endfor %}
             <p class="summary">
-            {% assign excerpt = post.content | strip_html | truncatewords: 50 %}
+            {{% assign excerpt = post.content | strip_html | truncatewords: 50 }}
             {{ excerpt }}
             </p>
         </article>

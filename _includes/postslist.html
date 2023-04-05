@@ -6,11 +6,13 @@
             <div class="separator"></div>
             <p class="article-info">{{ post.date | date: "%d %B %Y" }}</p>
             
-            {% assign content_blocks = post.content | split: '&lt;img' %}
-                {% if content_blocks.size > 1 %}
-                  {% assign first_image = content_blocks[1] | split: '>' | first %}
-                  <img{{ first_image }}>
-                {% endif %}
+            {% assign image_found = false %}
+                {% for img in post.content | split: ' ' %}
+                  {% if img contains '&lt;img' and image_found == false %}
+                    {% assign image_found = true %}
+                    {{ img }}
+                  {% endif %}
+            {% endfor %}
             
             {% assign excerpt = post.content | strip_html | truncatewords: 30 %}
             <p class="summary">{{ excerpt }}</p>

@@ -6,10 +6,10 @@
     </div>
     
     <input type="text" id="search" placeholder="Recherche...">
-    <h3>Tags</h3>
-    <ul class="tag-list">
-      {% for tag in site.tags %}
-        <li><a href="#">{{ tag | first }}</a></li>
-      {% endfor %}
-    </ul>
+          <div id="tags-container">
+            {% assign tags = site.tags | sort %}
+            {% for tag in tags %}
+              <a href="{{ site.baseurl }}/tag/{{ tag[0] }}" class="tag">{{ tag[0] }}</a>
+            {% endfor %}
+          </div>
 </aside>

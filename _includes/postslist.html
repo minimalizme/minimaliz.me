@@ -73,50 +73,74 @@
 
 
 <script>
-    function filterPosts() {
-        let searchQuery = $('#search-input').val().toLowerCase();
-        let checkedTags = $('input[type=checkbox]:checked').map(function() {
-            return this.value;
-        }).get();
+    function updatePagination() {
+                if (currentPage === 1) {
+                    $('#prev').hide();
+                } else {
+                    $('#prev').show();
+                }
 
-        let allPosts = $('.post');
-        let isFiltered = searchQuery !== "" || checkedTags.length > 0;
+                if (currentPage * postsPerPage >= filteredPosts.length) {
+                    $('#next').hide();
+                } else {
+                    $('#next').show();
+                }
+            }
 
-        if (isFiltered) {
-            filteredPosts = allPosts.filter(function() {
-                let postTags = $(this).data('tags').split(' ');
-                let hasTag = checkedTags.every(tag => postTags.includes(tag));
-                let postTitle = $(this).find('.article-title').text().toLowerCase();
-                let searchMatch = searchQuery === "" || postTitle.includes(searchQuery);
+            function updatePosts() {
+                $('.post').hide();
 
-                return hasTag && searchMatch;
+                for (let i = (currentPage - 1) * postsPerPage; i < currentPage * postsPerPage && i < filteredPosts.length; i++) {
+                    $(filteredPosts[i]).show();
+                }
+
+                updatePagination();
+            }
+
+            function filterPosts() {
+                let searchQuery = $('#search-input').val().toLowerCase();
+                let checkedTags = $('input[type=checkbox]:checked').map(function() {
+                    return this.value;
+                }).get();
+
+                if (searchQuery === "" && checkedTags.length === 0) {
+                    filteredPosts = $('.post');
+                    currentPage = 1;
+                    updatePosts();
+                    return;
+                }
+
+                filteredPosts = $('.post').filter(function() {
+                    let postTags = $(this).data('tags').split(' ');
+                    let hasTag = checkedTags.every(tag => postTags.includes(tag));
+                    let postTitle = $(this).find('.article-title').text().toLowerCase();
+                    let searchMatch = searchQuery === "" || postTitle.includes(searchQuery);
+
+                    return hasTag && searchMatch;
+                });
+
+                currentPage = 1;
+                updatePosts();
+            }
+
+            $(document).ready(function() {
+                // Initialisation
+                filterPosts();
+
+                // Handlers d'événements
+                $('#search-input').on('input', filterPosts);
+                $('input[type=checkbox]').on('change', filterPosts);
+
+                $('#prev').on('click', function(e) {
+                    e.preventDefault();
+                    currentPage--;
+                    updatePosts();
+                });
+
+                $('#next').on('click', function(e) {
+                    e.preventDefault();
+                    currentPage++;
+                    updatePosts();
+                });
             });
-        } else {
-            filteredPosts = allPosts;
-        }
-
-        currentPage = 1;
-        updatePosts();
-    }
-
-    $(document).ready(function() {
-        // Initialisation
-        filterPosts();
-
-        // Handlers d'événements
-        $('#search-input').on('input', filterPosts);
-        $('input[type=checkbox]').on('change', filterPosts);
-
-        $('#prev').on('click', function(e) {
-            e.preventDefault();
-            currentPage--;
-            updatePosts();
-        });
-
-        $('#next').on('click', function(e) {
-            e.preventDefault();
-            currentPage++;
-            updatePosts();
-        });
-    });
     </script>

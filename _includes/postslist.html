@@ -1,26 +1,12 @@
 <div class="content">
-        <!-- Article 1 -->
+        {% for post in site.posts %}
         <article>
-            <h3 class="article-title">Titre de l'article 1</h3>
-            <div class="separator"></div>
-            <p class="article-info">15 avril 2023</p>
-            <img src="assets/article1.jpg" alt="Image de l'article 1">
-            <p class="summary">Rien n’est "inutile" ou "perte de temps" ! Tout est une question de point de vue ! Le divertissement est un vaste sujet sur lequel il y'aurait beaucoup à dire, cependant j'aimerais m'arrêter ici sur la notion de perte de temps. On distingue effectivement dans nos vies les moments de travail, souvent jugé comme des [...]</p>
+                
+                    <a href="{{ post.url | relative_url }}" class="article-title">{{ post.title }}</a>
+                    <div class="separator"></div>
+                    <p class="article-info">{{ post.date | date: "%d %B %Y" }}</p>
+                    <img src="assets/article1.jpg" alt="Image de l'article 1">
+                    <p class="summary">{{ post.excerpt }}</p>
         </article>
-        <!-- Article 2 -->
-        <article>
-            <h3 class="article-title">Titre de l'article 2</h3>
-            <div class="separator"></div>
-            <p class="article-info">14 avril 2023 par Auteur</p>
-            <img src="assets/article2.jpg" alt="Image de l'article 2">
-            <p class="summary">Résumé de l'article 2...</p>
-        </article>
-        
-        <article>
-            <h3 class="article-title">Titre de l'article 2</h3>
-            <div class="separator"></div>
-            <p class="article-info">14 avril 2023 par Auteur</p>
-            <img src="assets/article2.jpg" alt="Image de l'article 2">
-            <p class="summary">Résumé de l'article 2...</p>
-        </article>
+            {% endfor %}
     </div>

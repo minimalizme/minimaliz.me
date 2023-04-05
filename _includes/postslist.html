@@ -1,6 +1,6 @@
 <div class="content">
         {% for post in paginator.posts %}
-        <article>
+        <article class="post" data-tags="{{ post.tags | join: ' ' }}">
             
             <a href="{{ post.url | relative_url }}" class="article-title">{{ post.title }}</a>
             <div class="separator"></div>
@@ -27,4 +27,25 @@
                     <a href="{{ paginator.next_page_path | relative_url }}">Suivant &raquo;</a>
                 {% endif %}
             </div>
+        
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var tagFilter = document.getElementById('tagFilter');
+            var posts = document.querySelectorAll('.post');
+
+            tagFilter.addEventListener('change', function() {
+              var selectedTag = this.value;
+
+              posts.forEach(function(post) {
+                var postTags = post.getAttribute('data-tags').split(' ');
+
+                if (selectedTag === '' || postTags.includes(selectedTag)) {
+                  post.style.display = 'block';
+                } else {
+                  post.style.display = 'none';
+                }
+              });
+            });
+          });
+        </script>
     </div>

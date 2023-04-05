@@ -27,25 +27,87 @@
                     <a href="{{ paginator.next_page_path | relative_url }}">Suivant &raquo;</a>
                 {% endif %}
             </div>
-        
         <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            var tagFilter = document.getElementById('tagFilter');
-            var posts = document.querySelectorAll('.post');
+        document.addEventListener('DOMContentLoaded', function() {
+          var tagFilter = document.getElementById('tagFilter');
+          var postList = document.getElementById('postList');
+          var filteredPostsInput = document.getElementById('filteredPosts');
+          var postsPerPage = {{ site.paginate }}; // Remplacez par le nombre de posts par page défini dans votre fichier _config.yml
 
-            tagFilter.addEventListener('change', function() {
-              var selectedTag = this.value;
-
-              posts.forEach(function(post) {
-                var postTags = post.getAttribute('data-tags').split(' ');
-
-                if (selectedTag === '' || postTags.includes(selectedTag)) {
-                  post.style.display = 'block';
-                } else {
-                  post.style.display = 'none';
-                }
-              });
-            });
+          var filteredPosts = filteredPostsInput.value.split('|||').map(function(postStr) {
+            var postParts = postStr.split('|');
+            return {
+              url: postParts[0],
+              title: postParts[1],
+              date: postParts[2],
+              content: postParts[3],
+              tags: postParts[4].split(' '),
+            };
           });
-        </script>
+
+          function renderPosts(posts, page) {
+            var startIndex = (page - 1) * postsPerPage;
+            var endIndex = startIndex + postsPerPage;
+
+            postList.innerHTML = '';
+
+            posts.slice(startIndex, endIndex).forEach(function(post) {
+              var postEl = document.createElement('article');
+              postEl.className = 'post';
+              postEl.innerHTML = `
+                <h2><a href="${post.url}">${post.title}</a></h2>
+                <div class="separator"></div>
+                <p class="article-info">${post.date}</p>
+                <p class="summary">${post.content}</p>
+                <a href="${post.url}">Lire la suite</a>
+              `;
+
+              postList.appendChild(postEl);
+            });
+
+            updatePagination(posts, page);
+          }
+
+          function updatePagination(posts, currentPage) {
+            var totalPages = Math.ceil(posts.length / postsPerPage);
+            var paginationEl = document.querySelector('.pagination');
+            paginationEl.innerHTML = '';
+
+            if (currentPage > 1) {
+              var prevLink = document.createElement('a');
+              prevLink.href = '#';
+              prevLink.innerHTML = '&laquo; Précédent';
+              prevLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                renderPosts(posts, currentPage - 1);
+              });
+              paginationEl.appendChild(prevLink);
+            }
+
+            if (currentPage < totalPages) {
+              var nextLink = document.createElement('a');
+              nextLink.href = '#';
+              nextLink.innerHTML = 'Suivant &raquo;';
+              nextLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                renderPosts(posts, currentPage + 1);
+              });
+              paginationEl.appendChild(nextLink);
+            }
+          }
+
+          tagFilter.addEventListener('change', function() {
+            var selectedTag = this.value;
+
+            var visiblePosts = filteredPosts.filter(function(post) {
+              return selectedTag === '' || post.tags.includes(selectedTag);
+            });
+
+            renderPosts(visiblePosts, 1);
+          });
+
+          renderPosts(filteredPosts, 1);
+          });
+                      
+                      </script>
     </div>

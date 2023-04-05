@@ -13,4 +13,7 @@
         {% endfor %}
       </select>
     </div>
+    
+    
+    <input type="hidden" id="filteredPosts" value="{% for post in site.posts %}{{ post.url | relative_url }}|{{ post.title }}|{{ post.date | date: "%d %B %Y" }}|{{ post.content | strip_html | truncatewords: 30 }}|{{ post.tags | join: ' ' }}{% unless forloop.last %}|||{% endunless %}{% endfor %}">
 </aside>

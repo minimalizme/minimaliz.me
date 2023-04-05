@@ -1,82 +1,223 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Styles généraux */
 body {
-  font-family: "Montserrat", sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #FFF;
+    max-width: 1040px;
+    margin: 0 auto;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    word-wrap: break-word;
 }
 
-/* Site branding */
-#site-branding {
-    text-align:center;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
-.logo {
-    position:relative;
-    max-width: 100%;
+.logo img {
+    display: block;
     width: 100px;
-    height: auto;
-    margin-bottom: -10px;
+    margin-bottom: 5px;
 }
 
-.logotitle {
-    font-size: 2.4rem;
-    font-family: "Lato",
-    sans-serif;line-height: 1;
-    text-transform: uppercase;
-}
-
-.catchtitle {
+.main-title {
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: .667rem;
+    font-size: 2.4rem; /* Définit la taille de la police */
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    letter-spacing: .02em; /* Espacement des lettres */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    color: #947B37; /* Couleur du texte */
+    text-align: center; /* Centrer le texte horizontalement */
+    margin: 0 0 10px; /* Marge */
+    line-height: 1; /* Hauteur de ligne pour l'espacement vertical du texte */
+
+}
+
+.subtitle {
+    font-family: 'Lora', serif;
+    font-size: .66rem;
     letter-spacing: .2em;
     margin: 0;
     text-transform: uppercase;
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    
+        color: #404040; /* Couleur du texte */
+        text-align: center; /* Centrer le texte horizontalement */
+        line-height: 1; /* Hauteur de ligne pour l'espacement vertical du texte */
+        margin-bottom: 50px;
 }
-
-/* Menu */
-.bardivider {
-    width: 80%; /* largeur de la barre */
-    height: 1px; /* hauteur de la barre */
-    background-color: #ccc; /* couleur de fond de la barre */
-    margin: auto;
-}
-
 
 nav {
-    text-align:center;
+    display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        padding: 10px 0;
+        width: 100%;
+        left: 0;
+        z-index: 1;
 }
 
-ul {
-    list-style:none;
+nav a {
+    font-family: 'Montserrat';
+    font-weight: 100!important;
+    color: #161616;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .05em;
+    margin: 5px 20px 5px 20px;
 }
 
-li {
-    display: inline-block;
-    margin-right:20px;
+nav a:hover {
+    color: #947B37;
 }
 
-/* Body */
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Contenu principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
-#postslist {
-    width: 70%;
+.content {
+    flex: 3;
+    margin: 0 120px 0 0px;
 }
 
-#sidebar {
-    width: 30%;
-
+article {
+    margin-bottom: 50px;
+    border-bottom: solid 1px #ebebeb;
 }
 
-/* Footer */
+article:last-child {
+    border-bottom: none;
+}
 
-#footer {
-    float: none;
+.article-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    letter-spacing: .02em; /* Espacement des lettres */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    color: #404040; /* Couleur du texte */
+ text-align: center;
+    margin: 0 0 5px 0; /* Marge */
+}
+
+.separator {
+    width: 24px;
+    height: 2px;
+    background-color: #161616;
+    margin: 10px auto 15px;
+}
+
+.article-info {
+    font-family: 'Lora', serif;
+    font-size: .66rem;
+    letter-spacing: .1em;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    
+    color: #404040; /* Couleur du texte */
+    text-align: center; /* Centrer le texte horizontalement */
+    line-height: 1; /* Hauteur de ligne pour l'espacement vertical du texte */
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.summary {
+    font-family: 'Lora', serif;
+    font-size: .96em;
+    line-height: 1.625em;
+    letter-spacing: 0em;
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    color: #404040; /* Couleur du texte */
+    margin-bottom: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+}
+
+.profil {
     
 }
 
+p.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    line-height: 1;
+    font-weight: 600; /* Définit l'épaisseur de la police */
+    color: #404040; /* Couleur du texte */
+    text-align:center;
+    margin: 20px 0 20px 0px;
+}
 
+p.info {
+    font-family: 'Lora', sans-serif;
+    font-size: .9rem;
+    line-height: 1;
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    color: #404040; /* Couleur du texte */
+    text-align:center;
+    margin: 20px 0 20px 0px;
+}
+
+.sidebar img {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+
+
+footer {
+    border-top: solid 1px #ebebeb;
+    height:100px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        margin:30px;
+    }
+    main {
+        flex-direction: column;
+    }
+
+    .content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
 
 /*color gold  #947B37*/
+

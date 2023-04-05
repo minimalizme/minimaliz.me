@@ -1,4 +1,4 @@
-<div class="content">
+<!--<div class="content">
         {% for post in paginator.posts %}
         <article class="post" data-tags="{{ post.tags | join: ' ' }}">
             
@@ -29,3 +29,115 @@
                 {% endif %}
         </div>
 </div>
+-->
+
+
+
+<div class="content">
+        <input type="text" id="search-input" placeholder="Rechercher...">
+
+        <div id="tag-list">
+            {% for tag in site.tags %}
+            <input type="checkbox" id="{{ tag[0] }}" name="{{ tag[0] }}" value="{{ tag[0] }}">
+            <label for="{{ tag[0] }}">{{ tag[0] }}</label>
+            {% endfor %}
+        </div>
+
+        <div id="post-list">
+            {% for post in site.posts %}
+            <article class="post" data-tags="{{ post.tags | join: ' ' }}" style="display:none;">
+                
+                <a href="{{ post.url | relative_url }}" class="article-title">{{ post.title }}</a>
+                <div class="separator"></div>
+                <p class="article-info">{{ post.date | date: "%d %B %Y" }}</p>
+                
+                {% assign image_found = false %}
+                {% assign content_blocks = post.content | split: '<img' %}
+                {% if content_blocks.size > 1 %}
+                {% assign first_image = content_blocks[1] | split: '>' | first %}
+                <img{{ first_image }}>
+                {% endif %}
+                
+                {% assign excerpt = post.content | strip_html | truncatewords: 30 %}
+                <p class="summary">{{ excerpt }}</p>
+            
+            </article>
+            {% endfor %}
+        </div>
+
+        <div class="pagination">
+            <a href="#" id="prev">&laquo; Précédent</a>
+            <a href="#" id="next">Suivant &raquo;</a>
+        </div>
+    </div>
+
+
+<script>
+        const postsPerPage = 3;
+        let currentPage = 1;
+        let filteredPosts = [];
+
+        function updatePagination() {
+            if (currentPage === 1) {
+                $('#prev').hide();
+            } else {
+                $('#prev').show();
+            }
+
+            if (currentPage * postsPerPage >= filteredPosts.length) {
+                $('#next').hide();
+            } else {
+                $('#next').show();
+            }
+        }
+
+        function updatePosts() {
+            $('.post').hide();
+
+            for (let i = (currentPage - 1) * postsPerPage; i < currentPage * postsPerPage && i < filteredPosts.length; i++) {
+                $(filteredPosts[i]).show();
+            }
+
+            updatePagination();
+        }
+
+        function filterPosts() {
+            let searchQuery = $('#search-input').val().toLowerCase();
+            let checkedTags = $('input[type=checkbox]:checked').map(function() {
+                return this.value;
+            }).get();
+
+            filteredPosts = $('.post').filter(function() {
+                let postTags = $(this).data('tags').split(' ');
+                let hasTag = checkedTags.every(tag => postTags.includes(tag));
+                let postTitle = $(this).find('.article-title').text().toLowerCase();
+                let searchMatch = searchQuery === "" || postTitle.includes(searchQuery);
+
+                return hasTag && searchMatch;
+            });
+
+            currentPage = 1;
+            updatePosts();
+        }
+
+        $(document).ready(function() {
+            // Initialisation
+            filterPosts();
+
+            // Handlers d'événements
+            $('#search-input').on('input', filterPosts);
+            $('input[type=checkbox]').on('change', filterPosts);
+
+            $('#prev').on('click', function(e) {
+                e.preventDefault();
+                currentPage--;
+                updatePosts();
+            });
+
+            $('#next').on('click', function(e) {
+                e.preventDefault();
+                currentPage++;
+                updatePosts();
+            });
+        });
+    </script>

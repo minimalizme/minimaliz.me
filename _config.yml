@@ -1,1 +1,6 @@
 title: minimaliz.me
+plugins:
+  - jekyll-paginate
+  
+paginate: 2
+paginate_path: "/page:num/"

@@ -148,6 +148,7 @@ article:last-child {
     font-size: .66rem;
     letter-spacing: .1em;
     margin: 0;
+    color: #404040;
     text-transform: uppercase;
     font-weight: 400; /* Définit l'épaisseur de la police */
     text-align: center; /* Centrer le texte horizontalement */
@@ -155,13 +156,6 @@ article:last-child {
     margin-bottom: 20px;
 }
 
-.article-tag {
-    color: #404040; /* Couleur du texte */
-}
-
-.article-tag {
-    color: #947B37; /* Couleur du texte */
-}
 
 img {
     display: block;

@@ -10,7 +10,7 @@
                 
                 <a href="{{ post.url | relative_url }}" class="article-title">{{ post.title }}</a>
                 <div class="separator"></div>
-                <p class="article-info">{{ post.date | date: "%d %B %Y" }}</p>
+                <p class="article-info">{{ post.date | date: "%d %B %Y" }} - {{ post.tags }}</p>
                 
                 {% assign image_found = false %}
                 {% assign content_blocks = post.content | split: '<img' %}

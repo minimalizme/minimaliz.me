@@ -259,6 +259,8 @@ footer {
     }
 }
 
+
+/*SEARCH BAR*/
 /* Conteneur pour la barre de recherche */
 .search-container {
   display: flex;
@@ -287,6 +289,56 @@ footer {
 #search-input:hover {
   border-color: #947B37; /* Couleur de la bordure lorsque la barre de recherche est survolée */
 }
+
+/* TAG LIST*/
+/* Conteneur pour la liste des tags */
+#tag-list {
+  display: flex;
+  flex-direction: column; /* Organise les tags les uns en dessous des autres */
+  align-items: flex-start; /* Alignement des tags à gauche */
+  margin-bottom: 20px; /* Ajoute de l'espace sous la liste des tags */
+}
+
+/* Style pour les cases à cocher et les labels */
+#tag-list input[type=checkbox] {
+  display: none; /* Masque les cases à cocher par défaut */
+}
+
+#tag-list label {
+  display: inline-block;
+  padding: 4px 12px; /* Espacement interne pour les labels */
+  margin-bottom: 8px; /* Espacement entre les labels */
+  font-size: 14px; /* Taille du texte pour les labels */
+  border-radius: 12px; /* Arrondit les coins des labels */
+  cursor: pointer; /* Change le curseur en main lors du survol des labels */
+  background-color: transparent; /* Couleur d'arrière-plan des labels */
+  position: relative; /* Nécessaire pour positionner les cases à cocher personnalisées */
+}
+
+/* Cases à cocher personnalisées */
+#tag-list label:before {
+  content: ""; /* Contenu vide pour générer l'élément */
+  display: inline-block;
+  width: 16px; /* Largeur de la case à cocher personnalisée */
+  height: 16px; /* Hauteur de la case à cocher personnalisée */
+  border: 2px solid #947B37; /* Bordure de la case à cocher personnalisée */
+  border-radius: 50%; /* Rend la case à cocher personnalisée ronde */
+  margin-right: 8px; /* Espacement entre la case à cocher personnalisée et le texte du label */
+  vertical-align: middle; /* Alignement vertical avec le texte du label */
+  position: absolute; /* Positionnement absolu par rapport au label */
+  left: 4px; /* Positionnement horizontal de la case à cocher personnalisée */
+  top: 50%; /* Positionnement vertical de la case à cocher personnalisée */
+  transform: translateY(-50%); /* Centre la case à cocher personnalisée verticalement */
+}
+
+/* Style pour les cases à cocher cochées */
+#tag-list input[type=checkbox]:checked + label:before {
+  background-color: #947B37; /* Couleur d'arrière-plan de la case à cocher cochée */
+}
+
+
+
+
 
 /*color gold  #947B37*/
 

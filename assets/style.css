@@ -73,7 +73,7 @@ nav {
         z-index: 1;
 }
 
-nav a:link {
+nav a {
     font-family: 'Montserrat';
     font-weight: 100!important;
     color: #161616;
@@ -201,7 +201,7 @@ p.info {
     margin: 0 auto 20px;
 }
 
-.pagination a:link{
+.pagination a{
     font-family: 'Montserrat';
     font-weight: 100!important;
     color: #161616;
@@ -211,6 +211,25 @@ p.info {
     letter-spacing: .05em;
     margin: 5px 20px 5px 20px;
 }
+
+.pagination a:link {
+    color: #947B37;
+}
+
+a:visited {
+  color: #404040;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #947B37;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #404040;
+}
+
 
 .pagination a:hover {
     color: #947B37;

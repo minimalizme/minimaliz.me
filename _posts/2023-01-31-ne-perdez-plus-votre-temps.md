@@ -7,7 +7,7 @@ tags:
   - Self-growth
 ---
 
-<img src="{{ "assets/SeDesencombrer.jpg" | relative_url }}" alt="Ne perdez plus votre temps" class="thumbnail">
+<img src="{{ "assets/NeCulpabilizerPlusDeVousDivertir.jpg" | relative_url }}" alt="Ne perdez plus votre temps" class="thumbnail">
 <br><br>
 Rien n’est « inutile » ou « perte de temps » ! Tout est une question de point de vue !
 <br><br>

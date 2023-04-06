@@ -19,19 +19,19 @@ Il est possible que pour vous, la réponse à cette question soit: aucun bénéf
 <br><br>
 Mais il y’a des bénéfices à cela et je vais vous en donner certains. La réponse est en partie dans le titre ! Si vous pensez que vous avez besoin de désencombrer votre espace de vie et même votre esprit, alors le désencombrement est une bonne chose.
 <br><br>
-	•	Cela peut vous faciliter la tâche pour le ménage et augmenter l’espace de rangement
-	•	Vous ne chercherez plus vos affaires
-	•	Vous améliorerez votre productivité : un environnement encombré peut distraire et rendre la concentration plus difficile.
-	•	Vous économiserez de l’argent.
-	•	Vous aurez moins de difficultés si vous déménagez régulièrement ou si vous devez partir vivre à l’étranger quelque temps
-	•	Vous aurez l’impression d’avoir plus de place chez vous
-	•	Et enfin, vous aurez un esprit zen
+	•	Cela peut vous faciliter la tâche pour le ménage et augmenter l’espace de rangement<br>
+	•	Vous ne chercherez plus vos affaires<br>
+	•	Vous améliorerez votre productivité : un environnement encombré peut distraire et rendre la concentration plus difficile.<br>
+	•	Vous économiserez de l’argent.<br>
+	•	Vous aurez moins de difficultés si vous déménagez régulièrement ou si vous devez partir vivre à l’étranger quelque temps<br>
+	•	Vous aurez l’impression d’avoir plus de place chez vous<br>
+	•	Et enfin, vous aurez un esprit zen<br>
 <br><br>
 Si vous êtes convaincu que faire un minimum de tri peut être bénéfique, je vais alors vous donner quelques outils pour faire votre désencombrement. C’est une question d’organisation.
 <br><br>
 Le secret est de connaitre les différents types d’objets que vous allez rencontrer durant votre tri et savoir comment s’en débarrasser, on peut les classer en 5 types:
 <br><br>
-Les objets chers: L’objet cher est un objet qui vous a coûté suffisamment cher pour que cela soit très douloureux de vous en débarrasser. Ce genre d’objet doit d’ailleurs être à proscrire quand vous êtes dans une démarche d’achats. Pour vous donner un exemple, je fais toujours très attention d’acheter des choses dont le prix ne dépasse pas 20% de mon salaire sauf si cet objet n’est pas encombrant et qu’il pourrait faire partie de l’équipement de mon « Dailybag » ! Cela peut être un ordinateur ou un smartphone. Mais attention à ne pas les accumuler. En gros si vous avez vendu un rein pour votre objet, il est fort probable qu’il devienne encombrant sauf s’il fait partie de votre équipement qui tient dans un sac à dos.
+<b>Les objets chers:</b> L’objet cher est un objet qui vous a coûté suffisamment cher pour que cela soit très douloureux de vous en débarrasser. Ce genre d’objet doit d’ailleurs être à proscrire quand vous êtes dans une démarche d’achats. Pour vous donner un exemple, je fais toujours très attention d’acheter des choses dont le prix ne dépasse pas 20% de mon salaire sauf si cet objet n’est pas encombrant et qu’il pourrait faire partie de l’équipement de mon « Dailybag » ! Cela peut être un ordinateur ou un smartphone. Mais attention à ne pas les accumuler. En gros si vous avez vendu un rein pour votre objet, il est fort probable qu’il devienne encombrant sauf s’il fait partie de votre équipement qui tient dans un sac à dos.
 <br><br>
 S’en débarrasser: Posez-vous déjà la question de savoir si vous en avez vraiment besoin, l’utiliser vous au quotidien ? Si oui, alors gardez-le sinon la meilleure solution est de revendre l’objet. Le but est de réduire le prix qu’il vous a coûté afin que le fait de s’en séparer ne soit plus un problème.
 <br><br>
@@ -51,4 +51,4 @@ Et enfin les objets personnels: J’entends par là, ce qui ne se partage pas vr
 <br><br>
 Comment se débarrasser de certains objets personnels: Ici, le but n’est pas tant de tout jeter, mais de faire en sorte que les affaires qui font partie de vous soient les moins encombrantes possibles. La manière la plus simple de faire est de se demander quelles sont toutes les affaires que vous prendriez si vous deviez aller vivre 6 mois à l’étranger, vous n’emporteriez évidemment aucune décoration et aucun objet utilitaires. Seulement votre « bagpack » et quelques valises. Le jeu sera de réduire au maximum pour que tout tienne dans le moins de valises possible. Sans être forcément dans l’extrême ce qui peut être bien, c’est d’arriver à un sac et une valise en soute. Pour ma part, je n’aime pas mettre ma valise en soute alors, j’ai d’abord tout réduit à un sac plus une valise cabine. Et depuis je suis capable de me débrouiller juste avec un sac de 20litres à moins de 5kg 😉
 N’hésitez pas à partager dans les commentaires vos astuces, et nous dire si vous avez réussi à réduire vos affaires personnelles à un sac à dos !
-<fin>
+<div class="fin">

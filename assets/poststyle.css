@@ -1,0 +1,8 @@
+/*css*/
+post.thumbnail {
+    display: none;
+}
+
+post h1 {
+  color: grey;
+}

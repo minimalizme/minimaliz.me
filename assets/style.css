@@ -190,14 +190,14 @@ p.summary {
     
 }
 
-p.name {
+p.sidebar_title {
     font-family: 'Montserrat', sans-serif;
     font-size: .9rem;
     line-height: 1;
     font-weight: 600; /* Définit l'épaisseur de la police */
     color: #404040; /* Couleur du texte */
     text-align:center;
-    margin: 20px 0 20px 0px;
+    margin: 20px 0 35px 0px;
 }
 
 p.info {

@@ -1,11 +1,11 @@
 <aside class="sidebar">
     <div class="profil">
     <img src="{{ "assets/profil.png" | relative_url }}" alt="profil">
-    <p class="name">Ben</p>
+    <p class="sidebar_title">Ben</p>
     <p class="info">Entrepreneur dans la tech, coach et auteur dans les domaines du minimalisme et du développement personnel.<br><br>Je vous aide à trouver les outils qui vous sont utiles pour vous et vous seul !<br><br>Le minimalisme n'est pas une mode ou un but à atteindre, mais un bon outil pour entreprendre et optimiser sa vie.<br><br>Pour me contacter, envoyez-moi un message privé sur Instagram.</p>
     </div>
     <div class="separator_sidebar"></div>
-    <p class="name">CATÉGORIES</p>
+    <p class="sidebar_title">CATÉGORIES</p>
         <div id="tag-list">
             {% for tag in site.tags %}
             <input type="checkbox" id="{{ tag[0] }}" name="{{ tag[0] }}" value="{{ tag[0] }}">

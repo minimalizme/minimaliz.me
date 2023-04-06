@@ -186,10 +186,10 @@ p.summary {
 }
 
 .separator_sidebar {
-    width: 24px;
+    width: 100%;
     height: 1px;
     background-color: #ebebeb;
-    margin: 10px auto 15px;
+    margin: 40px auto 40px;
 }
 
 .profil {
@@ -313,10 +313,11 @@ footer {
 
 #tag-list label {
     font-family: 'Lora', sans-serif;
-    font-size: 1rem;
+    font-size: .8rem;
     line-height: 1;
-    font-weight: 500; /* Définit l'épaisseur de la police */
-    color: #404040; /* Couleur du texte */
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    color: #947B37; /* Couleur du texte */
+    text-transform: uppercase;
     
   display: inline-block;
   padding: 1px 0px 1px 35px; /* Espacement interne pour les labels */

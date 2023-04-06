@@ -219,7 +219,7 @@ p.info {
 #prev a {
     font-family: 'Montserrat';
     font-weight: 100!important;
-    color: #161616;
+    color: #161616 !important;
     text-align: center;
     text-transform: uppercase;
     font-size: .8rem;
@@ -230,7 +230,7 @@ p.info {
 #next a {
     font-family: 'Montserrat';
     font-weight: 100!important;
-    color: #161616;
+    color: #161616 !important;
     text-align: center;
     text-transform: uppercase;
     font-size: .8rem;
@@ -321,7 +321,7 @@ footer {
   display: inline-block;
   width: 16px; /* Largeur de la case à cocher personnalisée */
   height: 16px; /* Hauteur de la case à cocher personnalisée */
-  background-image: url('{{ "assets/checkbox-unchecked.svg" | relative_url }}'); /* Image de la case à cocher non cochée */
+  background-image: url('checkbox-unchecked.svg'); /* Image de la case à cocher non cochée */
   background-size: contain; /* Redimensionne l'image pour qu'elle s'adapte à la taille de l'élément */
   background-repeat: no-repeat; /* Empêche la répétition de l'image */
   margin-right: 8px; /* Espacement entre la case à cocher personnalisée et le texte du label */
@@ -334,7 +334,7 @@ footer {
 
 /* Style pour les cases à cocher cochées */
 #tag-list input[type=checkbox]:checked + label:before {
-  background-image: url('{{ "assets/checkbox-checked.svg" | relative_url }}'); /* Image de la case à cocher cochée */
+  background-image: url('checkbox-checked.svg'); /* Image de la case à cocher cochée */
 }
 
 

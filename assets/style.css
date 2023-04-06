@@ -112,15 +112,19 @@ article:last-child {
 .article-title {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    
     font-size: 1.2rem;
     line-height: 1.4;
     font-weight: 400; /* Définit l'épaisseur de la police */
     letter-spacing: .02em; /* Espacement des lettres */
     text-transform: uppercase; /* Transforme le texte en majuscules */
     color: #404040; /* Couleur du texte */
- text-align: center;
     margin: 0 0 5px 0; /* Marge */
+}
+
+.article-title a {
+    display: block; /* Ajoutez cette ligne pour centrer le lien */
+    text-align: center;
+    color: #404040;
 }
 
 .article-title a:hover {
@@ -201,15 +205,19 @@ p.info {
     margin: 0 auto 20px;
 }
 
-.pagination a{
+
+.pagination {
     font-family: 'Montserrat';
     font-weight: 100!important;
-    color: #161616;
     text-align: center;
     text-transform: uppercase;
     font-size: .8rem;
     letter-spacing: .05em;
     margin: 5px 20px 5px 20px;
+}
+
+.pagination a{
+    color: #161616;
 }
 
 .pagination a:link {

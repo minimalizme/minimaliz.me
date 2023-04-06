@@ -7,6 +7,10 @@
     list-style: none;
 }
 
+.thumbnail {
+    display: none;
+}
+
 /* Styles généraux */
 body {
     font-family: Arial, sans-serif;

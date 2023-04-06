@@ -7,9 +7,12 @@ tags:
   - Self-growth
 ---
 
-<img src="{{ "assets/StopALaModeDuMinimalisme.jpg" | relative_url }}" alt="Stop à la mode du minimalisme">
+<img src="{{ "assets/StopALaModeDuMinimalisme.jpg" | relative_url }}" alt="Stop à la mode du minimalisme" class="thumbnail">
 
 Rien n’est "inutile" ou "perte de temps" ! Tout est une question de point de vue !
+
+
+<img src="{{ "assets/MonProblemeAvecApple.jpg" | relative_url }}" alt="" class="picture">
 
 La distraction est un vaste sujet sur lequel il y'aurait beaucoup à dire, cependant j'aimerais m'arrêter ici sur la notion de perte de temps.
 

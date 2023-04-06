@@ -7,7 +7,7 @@ tags:
   - Developpement Personnel
 ---
 
-￼
+<img src="{{ "assets/StopALaModeDuMinimalisme.jpg » | relative_url }}" alt="profil">
 
 Rien n’est "inutile" ou "perte de temps" ! Tout est une question de point de vue !
 

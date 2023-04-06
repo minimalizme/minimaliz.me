@@ -73,7 +73,7 @@ nav {
         z-index: 1;
 }
 
-nav a {
+nav a:link {
     font-family: 'Montserrat';
     font-weight: 100!important;
     color: #161616;
@@ -201,7 +201,7 @@ p.info {
     margin: 0 auto 20px;
 }
 
-.pagination {
+.pagination a:link{
     font-family: 'Montserrat';
     font-weight: 100!important;
     color: #161616;
@@ -215,29 +215,6 @@ p.info {
 .pagination a:hover {
     color: #947B37;
 }
-
-#prev a {
-    font-family: 'Montserrat';
-    font-weight: 100!important;
-    color: #161616 !important;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: .8rem;
-    letter-spacing: .05em;
-    margin: 5px 20px 5px 20px;
-}
-
-#next a {
-    font-family: 'Montserrat';
-    font-weight: 100!important;
-    color: #161616 !important;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: .8rem;
-    letter-spacing: .05em;
-    margin: 5px 20px 5px 20px;
-}
-
 
 footer {
     border-top: solid 1px #ebebeb;
@@ -319,8 +296,8 @@ footer {
 #tag-list label:before {
   content: ""; /* Contenu vide pour générer l'élément */
   display: inline-block;
-  width: 16px; /* Largeur de la case à cocher personnalisée */
-  height: 16px; /* Hauteur de la case à cocher personnalisée */
+  width: 20px; /* Largeur de la case à cocher personnalisée */
+  height: 20px; /* Hauteur de la case à cocher personnalisée */
   background-image: url('checkbox-unchecked.svg'); /* Image de la case à cocher non cochée */
   background-size: contain; /* Redimensionne l'image pour qu'elle s'adapte à la taille de l'élément */
   background-repeat: no-repeat; /* Empêche la répétition de l'image */

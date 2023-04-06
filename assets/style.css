@@ -346,3 +346,23 @@ footer {
 }
 
 
+/*CSS POST LAYOUT FIXED*/
+post .thumbnail {
+    display: none;
+}
+
+post h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    letter-spacing: .02em; /* Espacement des lettres */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    color: #404040; /* Couleur du texte */
+    margin: 0 0 5px 0; /* Marge */
+    display: block; /* Ajoutez cette ligne pour centrer le lien */
+    text-align: center;
+    color: #404040;
+}
+

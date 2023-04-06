@@ -213,23 +213,8 @@ p.info {
 }
 
 .pagination a:link {
-    color: #947B37;
+    color: #404040;
 }
-
-a:visited {
-  color: #404040;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #947B37;
-  text-decoration: none;
-}
-
-a:focus {
-  color: #404040;
-}
-
 
 .pagination a:hover {
     color: #947B37;

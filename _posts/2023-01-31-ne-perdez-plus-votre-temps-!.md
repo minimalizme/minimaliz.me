@@ -4,10 +4,10 @@ date: 2023-01-31
 author: Ben
 layout: layout_post
 tags:
-  - Developpement Personnel
+  - Self-growth
 ---
 
-<img src="{{ "assets/StopALaModeDuMinimalisme.jpg » | relative_url }}" alt="profil">
+<img src="{{ "assets/StopALaModeDuMinimalisme.jpg" | relative_url }}" alt="Stop à la mode du minimalisme">
 
 Rien n’est "inutile" ou "perte de temps" ! Tout est une question de point de vue !
 

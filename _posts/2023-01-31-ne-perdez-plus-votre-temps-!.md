@@ -5,7 +5,6 @@ author: Ben
 layout: layout_post
 tags:
   - Developpement Personnel
-visibility: public
 ---
 
 ￼

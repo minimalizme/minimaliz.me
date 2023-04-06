@@ -8,10 +8,15 @@
             {% for post in site.posts %}
             <article class="post" data-tags="{{ post.tags | join: ' ' }}" style="display:none;">
                 
+                <div class="title-container">
                 <a href="{{ post.url | relative_url }}" class="article-title">{{ post.title }}</a>
-                <div class="separator"></div>
-                <p class="article-info">{{ post.date | date: "%d %B %Y" }} - {{ post.tags | join: ' - ' }}</p>
+                </div>
                 
+                <div class="separator"></div>
+                <div class="article-info">
+                <p class="article-date">{{ post.date | date: "%d %B %Y" }} | </p>
+                <p class="article-tag">{{ post.tags | join: ' - ' }}</p>
+                </div>
                 {% assign image_found = false %}
                 {% assign content_blocks = post.content | split: '<img' %}
                 {% if content_blocks.size > 1 %}

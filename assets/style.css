@@ -109,6 +109,11 @@ article:last-child {
     border-bottom: none;
 }
 
+.title-container{
+    display: flex;
+        justify-content: center;
+}
+
 .article-title {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -145,11 +150,17 @@ article:last-child {
     margin: 0;
     text-transform: uppercase;
     font-weight: 400; /* Définit l'épaisseur de la police */
-    
-    color: #404040; /* Couleur du texte */
     text-align: center; /* Centrer le texte horizontalement */
     line-height: 1; /* Hauteur de ligne pour l'espacement vertical du texte */
     margin-bottom: 20px;
+}
+
+.article-tag {
+    color: #404040; /* Couleur du texte */
+}
+
+.article-tag {
+    color: #947B37; /* Couleur du texte */
 }
 
 img {

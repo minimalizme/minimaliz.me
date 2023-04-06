@@ -321,8 +321,9 @@ footer {
   display: inline-block;
   width: 16px; /* Largeur de la case à cocher personnalisée */
   height: 16px; /* Hauteur de la case à cocher personnalisée */
-  border: 2px solid #404040; /* Bordure de la case à cocher personnalisée */
-  border-radius: 50%; /* Rend la case à cocher personnalisée ronde */
+  background-image: url('{{ "assets/checkbox-unchecked.svg" | relative_url }}'); /* Image de la case à cocher non cochée */
+  background-size: contain; /* Redimensionne l'image pour qu'elle s'adapte à la taille de l'élément */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
   margin-right: 8px; /* Espacement entre la case à cocher personnalisée et le texte du label */
   vertical-align: middle; /* Alignement vertical avec le texte du label */
   position: absolute; /* Positionnement absolu par rapport au label */
@@ -333,23 +334,8 @@ footer {
 
 /* Style pour les cases à cocher cochées */
 #tag-list input[type=checkbox]:checked + label:before {
-  background-color: #947B37; /* Couleur d'arrière-plan de la case à cocher cochée */
-  border 3px solid #FFF:
-  border-radius:50%;
+  background-image: url('{{ "assets/checkbox-checked.svg" | relative_url }}'); /* Image de la case à cocher cochée */
 }
-
-/* Ajout du signe + pour les cases à cocher cochées */
-#tag-list input[type=checkbox]:checked + label::after {
-  content: "+"; /* Contenu du signe + */
-  display: inline-block;
-  position: absolute; /* Positionnement absolu par rapport au label */
-  left: 6px; /* Positionnement horizontal du signe + */
-  top: 50%; /* Positionnement vertical du signe + */
-  transform: translateY(-50%); /* Centre le signe + verticalement */
-  font-size: 12px; /* Taille du texte du signe + */
-  color: white; /* Couleur du texte du signe + */
-}
-
 
 
 

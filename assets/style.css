@@ -216,6 +216,28 @@ p.info {
     color: #947B37;
 }
 
+#prev a {
+    font-family: 'Montserrat';
+    font-weight: 100!important;
+    color: #161616;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .05em;
+    margin: 5px 20px 5px 20px;
+}
+
+#next a {
+    font-family: 'Montserrat';
+    font-weight: 100!important;
+    color: #161616;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .05em;
+    margin: 5px 20px 5px 20px;
+}
+
 
 footer {
     border-top: solid 1px #ebebeb;

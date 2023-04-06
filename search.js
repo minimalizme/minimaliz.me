@@ -1,4 +1,4 @@
-const postsPerPage = 2;
+const postsPerPage = 5;
 let currentPage = 1;
 let allPosts = $('.post');
 

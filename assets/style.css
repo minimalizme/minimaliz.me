@@ -366,3 +366,15 @@ post h1 {
     color: #404040;
 }
 
+post .post-info {
+    font-family: 'Lora', serif;
+    font-size: .66rem;
+    letter-spacing: .1em;
+    margin: 0;
+    color: #404040;
+    text-transform: uppercase;
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    text-align: center; /* Centrer le texte horizontalement */
+    line-height: 1; /* Hauteur de ligne pour l'espacement vertical du texte */
+    margin-bottom: 20px;
+}

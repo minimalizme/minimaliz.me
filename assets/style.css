@@ -259,5 +259,34 @@ footer {
     }
 }
 
+/* Conteneur pour la barre de recherche */
+.search-container {
+  display: flex;
+  justify-content: center; /* Centre la barre de recherche horizontalement */
+  margin-bottom: 50px; /* Ajoute de l'espace sous la barre de recherche */
+}
+
+/* Barre de recherche */
+#search-input {
+  width: 100%; /* Largeur de la barre de recherche */
+  max-width: 600px; /* Largeur maximale de la barre de recherche */
+  padding: 10px 0px 10px 20px; /* Espacement interne de la barre de recherche */
+  border: 1px solid #ccc; /* Bordure de la barre de recherche */
+  border-radius: 5px; /* Arrondit les coins de la barre de recherche */
+  font-size: 16px; /* Taille du texte dans la barre de recherche */
+  outline: none; /* Supprime l'effet de mise au point par défaut du navigateur */
+}
+
+/* Effet de mise au point pour la barre de recherche */
+#search-input:focus {
+  border-color: #947B37; /* Couleur de la bordure lorsque la barre de recherche est mise au point */
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.25); /* Ombre portée lorsque la barre de recherche est mise au point */
+}
+
+/* Effet de survol pour la barre de recherche */
+#search-input:hover {
+  border-color: #947B37; /* Couleur de la bordure lorsque la barre de recherche est survolée */
+}
+
 /*color gold  #947B37*/
 

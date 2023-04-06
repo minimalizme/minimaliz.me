@@ -111,7 +111,7 @@ article:last-child {
 
 .title-container{
     display: flex;
-        justify-content: center;
+    justify-content: center;
 }
 
 .article-title {

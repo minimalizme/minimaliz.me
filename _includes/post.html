@@ -1,5 +1,5 @@
 <post>
     <h1>{{ page.title }}</h1>
     <p class="post-info">{{ page.date | date: "%d %B %Y" }} | <span style="color: #947B37;">{{ page.tags | join: ' - ' }}</span></p>
-    <p class="post-content">{{ content }}</p>
+    {{ content }}
 </post>

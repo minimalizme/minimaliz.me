@@ -379,7 +379,7 @@ post .post-info {
     margin-bottom: 20px;
 }
 
-post .post-content {
+post p{
     font-family: 'Lora', serif;
     font-size: 1rem;
     letter-spacing: .1em;

@@ -347,7 +347,7 @@ footer {
 
 
 /*CSS POST LAYOUT FIXED*/
-post img:first-of-type {
+post img:first-child {
     display: none;
 }
 

@@ -351,6 +351,10 @@ footer {
     display: none;
 }*/
 
+post {
+    margin-bottom: 50px;
+}
+
 post h1 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;

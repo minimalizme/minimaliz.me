@@ -70,7 +70,7 @@ $(document).ready(function() {
 });
 
 
-
+//Hide first image in Post page layout
 document.addEventListener("DOMContentLoaded", function() {
     var post = document.querySelector("post");
     var firstImage = post.querySelector("img");

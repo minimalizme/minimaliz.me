@@ -68,3 +68,14 @@ $(document).ready(function() {
         updatePosts();
     });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var post = document.querySelector("post");
+    var firstImage = post.querySelector("img");
+
+    if (firstImage) {
+      firstImage.style.display = "none";
+    }
+});

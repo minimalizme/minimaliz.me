@@ -347,9 +347,9 @@ footer {
 
 
 /*CSS POST LAYOUT FIXED*/
-post :is(img):first-of-type {
+/*post img {
     display: none;
-}
+}*/
 
 post h1 {
     font-family: 'Montserrat', sans-serif;

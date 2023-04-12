@@ -47,13 +47,23 @@ gold color: #947B37
 	text-decoration: line-through;
 }
 
+/* Liste non cochée */
+.ul1 {
+    list-style-type: url('checkbox-unchecked.svg');
+}
+
+/* Liste cochée */
+.ul2 {
+    list-style-type: url('checkbox-checked.svg');
+}
+
 /* Liste à puce */
-.li2 {
+.ul3 {
     margin-left: 50px !important;
 }
 
 /* Liste à tirets */
-.s5 {
+.ul4 {
     margin-left: 50px !important
     list-style-type: square;
 }

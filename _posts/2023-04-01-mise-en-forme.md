@@ -13,13 +13,13 @@ tags:
 <p class="p5"><b></b><br></p>
 <p class="p6"><br></p>
 <p class="p5"><br></p>
-<p class="p7"><span class="s1"><b>Monochasse</b></span></p>
-<p class="p4"><span class="s1"><b></b></span><br></p>
-<p class="p7"><span class="s1"><b>&lt;html&gt;</b></span></p>
-<p class="p7"><span class="s1"><b>&lt;body&gt;</b></span></p>
-<p class="p7"><span class="s1"><b>&lt;img src="assets/img/ours.jpeg"&gt;</b></span></p>
-<p class="p7"><span class="s1"><b>&lt;/html&gt;</b></span></p>
-<p class="p7"><span class="s1"><b>&lt;/body&gt;</b></span></p>
+<p class="p7">Monochasse</p>
+<p class="p8"><br></p>
+<p class="p7">&lt;html&gt;</p>
+<p class="p7">&lt;body&gt;</p>
+<p class="p7">&lt;img src="assets/img/ours.jpeg"&gt;</p>
+<p class="p7">&lt;/html&gt;</p>
+<p class="p7">&lt;/body&gt;</p>
 <p class="p4"><span class="s1"><b></b></span><br></p>
 <p class="p5"><b></b><br></p>
 <p class="p1"><b>Titre</b></p>
@@ -67,28 +67,28 @@ tags:
 <p class="p5"><br></p>
 <p class="p2"><a href="https://www.digikey.fr/fr/products/detail/panasonic-electric-works/DK1A1B-L2-3V/647245">https://www.digikey.fr/fr/products/detail/panasonic-electric-works/DK1A1B-L2-3V/647245</a></p>
 <p class="p5"><br></p>
-<p class="p8"><a href="http://apple.com">👨🏻‍💻<span class="s5"> apple</span></a></p>
+<p class="p9"><a href="http://apple.com">👨🏻‍💻<span class="s5"> apple</span></a></p>
 <p class="p5"><br></p>
 <p class="p5"><br></p>
 <table cellspacing="0" cellpadding="0" class="t1">
 <tbody>
 <tr>
 <td valign="top" class="td1">
-<p class="p9">Colonne 1</p>
+<p class="p10"><b>Colonne 1</b></p>
 </td>
 <td valign="top" class="td1">
-<p class="p2">colonne 2</p>
+<p class="p2"><b>colonne 2</b></p>
 </td>
 <td valign="top" class="td1">
-<p class="p2">colonne 3</p>
+<p class="p2"><b>colonne 3</b></p>
 </td>
 <td valign="top" class="td1">
-<p class="p10"><br></p>
+<p class="p2"><b>colonne 4</b></p>
 </td>
 </tr>
 <tr>
 <td valign="top" class="td1">
-<p class="p2">raw1</p>
+<p class="p2"><b>raw1</b></p>
 </td>
 <td valign="top" class="td1">
 <p class="p2">raw 1</p>
@@ -97,12 +97,12 @@ tags:
 <p class="p2">raw 1</p>
 </td>
 <td valign="top" class="td1">
-<p class="p10"><br></p>
+<p class="p2">raw 1</p>
 </td>
 </tr>
 <tr>
 <td valign="top" class="td1">
-<p class="p2">raw2<span class="Apple-converted-space"> </span></p>
+<p class="p2"><b>raw2<span class="Apple-converted-space"> </span></b></p>
 </td>
 <td valign="top" class="td1">
 <p class="p2">raw 2</p>
@@ -111,49 +111,49 @@ tags:
 <p class="p2">raw 2</p>
 </td>
 <td valign="top" class="td1">
-<p class="p10"><br></p>
+<p class="p2">raw 2</p>
 </td>
 </tr>
 <tr>
+<td valign="top" class="td1">
+<p class="p2"><b>raw 3</b></p>
+</td>
 <td valign="top" class="td1">
 <p class="p2">raw 3</p>
 </td>
 <td valign="top" class="td1">
-<p class="p10"><br></p>
+<p class="p2">raw 3</p>
 </td>
 <td valign="top" class="td1">
-<p class="p10"><br></p>
-</td>
-<td valign="top" class="td1">
-<p class="p10"><br></p>
+<p class="p2">raw 3</p>
 </td>
 </tr>
 <tr>
+<td valign="top" class="td1">
+<p class="p2"><b>raw 4</b></p>
+</td>
 <td valign="top" class="td1">
 <p class="p2">raw 4</p>
 </td>
 <td valign="top" class="td1">
-<p class="p10"><br></p>
+<p class="p2">raw 4</p>
 </td>
 <td valign="top" class="td1">
-<p class="p10"><br></p>
-</td>
-<td valign="top" class="td1">
-<p class="p10"><br></p>
+<p class="p2">raw 4</p>
 </td>
 </tr>
 <tr>
 <td valign="top" class="td1">
+<p class="p2"><b>raw 5</b></p>
+</td>
+<td valign="top" class="td1">
 <p class="p2">raw 5</p>
 </td>
 <td valign="top" class="td1">
-<p class="p10"><br></p>
+<p class="p2">raw 5</p>
 </td>
 <td valign="top" class="td1">
-<p class="p10"><br></p>
-</td>
-<td valign="top" class="td1">
-<p class="p10"><br></p>
+<p class="p2">raw 5</p>
 </td>
 </tr>
 </tbody>

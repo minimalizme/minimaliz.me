@@ -33,9 +33,11 @@ tags:
 <p class="p2">Liste coché :</p>
 <ul class="ul1">
 <li class="li2">non coché</li>
-<li class="li2">non coché</li>
 </ul>
 <ul class="ul2">
+<li class="li2">non coché</li>
+</ul>
+<ul class="ul1">
 <li class="li2">coché</li>
 </ul>
 <p class="p5"><b></b><br></p>
@@ -68,11 +70,11 @@ tags:
 </ol>
 <p class="p5"><br></p>
 <p class="p2">Liste coché :</p>
-<ul class="ul1">
+<ul class="ul2">
 <li class="li2">non coché</li>
 <li class="li2">non coché</li>
 </ul>
-<ul class="ul2">
+<ul class="ul1">
 <li class="li2">coché</li>
 </ul>
 <p class="p5"><br></p>

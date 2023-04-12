@@ -7,4 +7,57 @@ gold color: #947B37
 
 ------------------------------------- */
 
+/* Titre */
+.p1 {
+	font-size: 1.5rem !important;
+	font-weight: 400 !important;
+}
 
+/* Sous-titre */
+.p6 {
+    font-size: 1.2rem !important;
+	font-weight: 400 !important;
+}
+
+/* Corps */
+.p2 {
+	font-size: 1rem !important;
+	font-weight: 400 !important;
+}
+
+
+.p3 {
+	font-size: !important;
+	font-weight: !important;
+}
+
+
+.p4 {
+	font-size: !important;
+	font-weight: !important;
+}
+
+/* Souligné */
+.s2 {
+	text-decoration: underline !important;
+}
+
+/* Barré */
+.s3 {
+	text-decoration: line-through;
+}
+
+/* Liste à puce */
+.s4 {
+    margin-left: 50px !important;
+}
+
+/* Liste à tirets */
+.s5 {
+    margin-left: 50px !important
+    list-style-type: '-';
+}
+
+.Apple-tab-span {
+    margin-left: 50px !important;
+}

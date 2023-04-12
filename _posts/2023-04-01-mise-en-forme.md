@@ -21,6 +21,12 @@ tags:
 <p class="p5"><br></p>
 <p class="p7"><span class="s1"><b>Monochasse</b></span></p>
 <p class="p4"><span class="s1"><b></b></span><br></p>
+<p class="p7"><span class="s1"><b>&lt;html&gt;</b></span></p>
+<p class="p7"><span class="s1"><b>&lt;body&gt;</b></span></p>
+<p class="p7"><span class="s1"><b>&lt;img src="assets/img/ours.jpeg"&gt;</b></span></p>
+<p class="p7"><span class="s1"><b>&lt;/html&gt;</b></span></p>
+<p class="p7"><span class="s1"><b>&lt;/body&gt;</b></span></p>
+<p class="p4"><span class="s1"><b></b></span><br></p>
 <p class="p5"><b></b><br></p>
 <p class="p2">Dans un corps de texte le <b>gras</b> <i>l’italique</i> le <span class="s2">souligné</span> et le <span class="s3">barré</span></p>
 <p class="p5"><b></b><br></p>
@@ -60,7 +66,7 @@ tags:
 <p class="p5"><br></p>
 <p class="p2"><a href="https://www.digikey.fr/fr/products/detail/panasonic-electric-works/DK1A1B-L2-3V/647245">https://www.digikey.fr/fr/products/detail/panasonic-electric-works/DK1A1B-L2-3V/647245</a></p>
 <p class="p5"><br></p>
-<p class="p5"><br></p>
+<p class="p8"><a href="http://apple.com">👨🏻‍💻<span class="s6"> apple</span></a></p>
 <p class="p5"><br></p>
 <p class="p5"><br></p>
 <table cellspacing="0" cellpadding="0" class="t1">

@@ -49,12 +49,14 @@ gold color: #947B37
 
 /* Liste non cochée */
 .ul1 {
-    list-style-type: square;
+    list-style-image: url('checkbox-unchecked.svg') !important;
+    margin-left: 50px !important;
 }
 
 /* Liste cochée */
 .ul2 {
-    list-style-type: url('checkbox-checked.svg');
+    list-style-image: url('checkbox-checked.svg') !important;
+    margin-left: 50px !important;
 }
 
 /* Liste à puce */

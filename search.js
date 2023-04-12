@@ -96,10 +96,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
             document.querySelectorAll('pre.hljs').forEach(function (codeElement) {
                 const copyButton = document.createElement('button');
-                copyButton.textContent = 'Copier';
-                copyButton.style.position = 'absolute';
-                copyButton.style.top = '0';
-                copyButton.style.right = '0';
+                copyButton.className = 'copyButton';
+                copyButton.textContent = 'Copy';
                 copyButton.addEventListener('click', function () {
                     copyToClipboard(codeElement.querySelector('code'));
                 });

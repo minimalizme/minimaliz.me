@@ -465,6 +465,18 @@ tr:nth-child(even) {
 }
 
 
+.copyButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: gainsboro;
+    color: black;
+    font-weight: 900;
+}
+
 /*
 Atom One Dark by Daniel Gamage
 Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
@@ -483,9 +495,12 @@ hue-6-2: #e6c07b
 */
 
 .hljs {
-  color: #abb2bf;
-  border-radius:10px;
-  background: #282c34;
+    color: #abb2bf;
+    border-radius: 5px;
+    background: #282c34;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .hljs-comment,

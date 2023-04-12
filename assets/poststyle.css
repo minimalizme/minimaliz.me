@@ -10,13 +10,13 @@ gold color: #947B37
 /* Titre */
 .p1 {
 	font-size: 1.5rem !important;
-	font-weight: 400 !important;
+	font-weight: 200 !important;
 }
 
 /* Sous-titre */
 .p6 {
     font-size: 1.2rem !important;
-	font-weight: 400 !important;
+	font-weight: 200 !important;
 }
 
 /* Corps */
@@ -48,16 +48,37 @@ gold color: #947B37
 }
 
 /* Liste à puce */
-.s4 {
+.ul1 {
     margin-left: 50px !important;
 }
 
 /* Liste à tirets */
-.s5 {
+.ul2 {
     margin-left: 50px !important
-    list-style-type: '-';
+    list-style-type: square;
 }
+
+/* Liste non cochée */
+.ul3 {
+    margin-left: 50px !important
+    list-style-type: url('checkbox-unchecked.svg');
+}
+
+/* Liste cochée */
+.ul3 {
+    margin-left: 50px !important
+    list-style-type: url('checkbox-checked.svg');
+}
+
+
+/* Liste numéroté */
+.ol1 {
+    margin-left: 50px !important;
+}
+
 
 .Apple-tab-span {
     margin-left: 50px !important;
 }
+
+

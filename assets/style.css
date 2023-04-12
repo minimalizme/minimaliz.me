@@ -346,9 +346,6 @@ footer {
 
 
 /*CSS POST LAYOUT FIXED*/
-/*post img {
-    display: none;
-}*/
 
 post {
     margin-bottom: 50px;
@@ -388,4 +385,49 @@ post p{
     color: #404040;
     font-weight: 400; /* Définit l'épaisseur de la police */
     line-height: 1.625; /* Hauteur de ligne pour l'espacement vertical du texte */
+}
+
+/* Titre */
+.p1 {
+    font-size: 1.2rem !important;
+    font-weight: 200 !important;
+}
+
+
+/* Liste à puce */
+li {
+    font-family: 'Lora', sans-serif;
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    color: #404040; /* Couleur du texte */
+    margin-left: 50px !important;
+}
+
+/* tabulation */
+.Apple-tab-span {
+    margin-left: 50px !important;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table {
+    border-color: #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #947B37;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f8f5;
 }

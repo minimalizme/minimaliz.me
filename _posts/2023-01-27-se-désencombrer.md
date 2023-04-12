@@ -52,7 +52,7 @@ tags:
 <p class="p2"><b>Et enfin les objets personnels:</b> J’entends par là, ce qui ne se partage pas vraiment, les habits, serviette, produits de beauté, smartphone, ordinateur, sac, chaussures. On retrouve souvent toutes les affaires que l’on prend avec soi quand on voyage. Il y’a aussi les papiers personnels.</p>
 <p class="p5"><span class="s3"></span><br></p>
 <p class="p2"><span class="s3">Comment se débarrasser de certains objets personnels:</span> Ici, le but n’est pas tant de tout jeter, mais de faire en sorte que les affaires qui font partie de vous soient les moins encombrantes possibles. La manière la plus simple de faire est de se demander quelles sont toutes les affaires que vous prendriez si vous deviez aller vivre 6 mois à l’étranger, vous n’emporteriez évidemment aucune décoration et aucun objet utilitaires. Seulement votre « bagpack » et quelques valises. Le jeu sera de réduire au maximum pour que tout tienne dans le moins de valises possible. Sans être forcément dans l’extrême ce qui peut être bien, c’est d’arriver à un sac et une valise en soute. Pour ma part, je n’aime pas mettre ma valise en soute alors, j’ai d’abord tout réduit à un sac plus une valise cabine. Et depuis je suis capable de me débrouiller juste avec un sac de 20litres à moins de 5kg <span class="s4">😉</span></p>
+<p class="p5"><br></p>
 <p class="p2">N’hésitez pas à partager dans les commentaires vos astuces, et nous dire si vous avez réussi à réduire vos affaires personnelles à un sac à dos !</p>
-<p class="p6"><br></p>
 
 

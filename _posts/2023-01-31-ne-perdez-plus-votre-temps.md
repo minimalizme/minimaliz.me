@@ -10,7 +10,7 @@ tags:
 <p class="p3"><img src="{{ "assets/img/NeCulpabilizerPlusDeVousDivertir.jpg" | relative_url }}" alt="NeCulpabilizerPlusDeVousDivertir.jpg"></p>
 <p class="p4"><br></p>
 <div id="blockquote">
-<p class="p2">« Rien n’est « inutile » ou « perte de temps » ! Tout est une question de point de vue ! »</p>
+<p class="p2">Rien n’est « inutile » ou « perte de temps » ! Tout est une question de point de vue !</p>
 <p class="p2"><b>Ben</b></p>
 </div>
 <p class="p4"><br></p>

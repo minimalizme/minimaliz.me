@@ -28,13 +28,5 @@ tags:
 <p class="p4"><br></p>
 <p class="p2">Cet article est important ! C’est un disclaimer pour tous les autres à venir. Faites attention, le but n’est pas d’imposer des idées ou de vous inciter à faire les mêmes choix que moi. Beaucoup de choix sont personnels et ne peuvent pas forcément s’appliquer à votre personnalité. En revanche, cette façon de penser peut-être intéressante pour avoir des idées, montrer des exemples et partager mon expérience de la mise en oeuvre de ces outils.</p>
 <p class="p2">À vous de les utiliser au mieux dans votre quotidien pour optimiser votre vie et atteindre plus facilement vos objectifs.</p>
-<p class="p4"><br></p>
-<p class="p4"><br></p>
-<p class="p4"><br></p>
-<p class="p4"><br></p>
-<p class="p4"><br></p>
-<p class="p4"><br></p>
-<p class="p4"><br></p>
-<p class="p4"><br></p>
 
 

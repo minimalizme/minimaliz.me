@@ -456,7 +456,7 @@ tr:nth-child(even) {
 
 /* Balise "code" */
 
-code {
+.code {
     display: block;
     background-color: #f4f4f4;
     padding: 10px;
@@ -468,7 +468,7 @@ code {
     position: relative;
 }
 
-code::after {
+.code::after {
     content: 'Copier';
     display: inline-block;
     position: absolute;
@@ -482,12 +482,12 @@ code::after {
     font-size: 14px;
 }
 
-code:hover::after {
+.code:hover::after {
     background-color: #0066B3;
 }
 
 
-quote {
+.quote {
     margin-left: 100px;
     font-family: 'Lora', sans-serif !important;
     background-color: aquamarine;

@@ -141,9 +141,6 @@ tags:
 <p class="p5"><br></p>
 <p class="p5"><br></p>
 <p class="p5"><br></p>
-
-<p class="p3"><iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/xmdxEiJQF-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-
 <p class="p3"><a href="https://www.youtube.com/watch?v=xmdxEiJQF-o">How to Link YouTube Video to Notes App in iPhone | Techie Prashant | HINDI - YouTube</a></p>
 
 

@@ -75,17 +75,10 @@ gold color: #947B37
 li {    
     font-family: 'Lora', sans-serif;
     font-weight: 400; /* Définit l'épaisseur de la police */
-    color: #947B37; /* Couleur du texte */
+    color: #404040; /* Couleur du texte */
     margin-left: 50px !important;
 }
 
-/* Liste numéroté */
-ol {
-    font-family: 'Lora', sans-serif;
-    font-weight: 400; /* Définit l'épaisseur de la police */
-    color: #947B37; /* Couleur du texte */
-    margin-left: 50px !important;
-}
 
 .Apple-tab-span {
     margin-left: 50px !important;

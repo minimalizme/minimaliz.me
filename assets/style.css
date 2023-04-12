@@ -490,7 +490,7 @@ tr:nth-child(even) {
 #blockquote {
     margin-left: 100px;
     font-family: 'Lora', sans-serif !important;
-    background-color: aquamarine;
+    background-color: color(srgb 0.9568 0.9569 0.957);
     margin-right: 100px;
     padding: 10px;
     border-left: 5px solid #947B37;

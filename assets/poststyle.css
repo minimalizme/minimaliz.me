@@ -10,13 +10,13 @@ gold color: #947B37
 /* Titre */
 .p1 {
 	font-size: 1.5rem !important;
-	font-weight: 200 !important;
+	font-weight: 100 !important;
 }
 
 /* Sous-titre */
 .p6 {
     font-size: 1.2rem !important;
-	font-weight: 200 !important;
+	font-weight: 100 !important;
 }
 
 /* Corps */
@@ -65,25 +65,25 @@ gold color: #947B37
 
 /* Barré */
 .s3 {
-	text-decoration: line-through;
+	text-decoration: underline !important;
 }
 
 
 
 
 /* Liste à puce */
-.ul3 {
+li {    
+    font-family: 'Lora', sans-serif;
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    color: #947B37; /* Couleur du texte */
     margin-left: 50px !important;
-}
-
-/* Liste à tirets */
-.ul4 {
-    margin-left: 50px !important;
-    list-style-type: square !important;
 }
 
 /* Liste numéroté */
-.ol1 {
+ol {
+    font-family: 'Lora', sans-serif;
+    font-weight: 400; /* Définit l'épaisseur de la police */
+    color: #947B37; /* Couleur du texte */
     margin-left: 50px !important;
 }
 

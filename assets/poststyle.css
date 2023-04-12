@@ -48,12 +48,12 @@ gold color: #947B37
 }
 
 /* Liste à puce */
-.li2.s4 {
+.li2 .s4 {
     margin-left: 50px !important;
 }
 
 /* Liste à tirets */
-.li2.s5 {
+.li2 .s5 {
     margin-left: 50px !important
     list-style-type: square;
 }

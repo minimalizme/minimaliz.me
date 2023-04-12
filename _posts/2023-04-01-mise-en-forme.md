@@ -10,16 +10,15 @@ tags:
 <p class="p3"><img src="{{ "assets/img/images.jpeg" | relative_url }}" alt="images.jpeg"></p>
 <p class="p4"><span class="s1"><b></b></span><br></p>
 <p class="p1"><b>Titre</b></p>
-<p class="p5"><b></b><br></p>
-<p class="p6"><br></p>
 <p class="p5"><br></p>
-<p class="p7">Monochasse</p>
-<p class="p8"><br></p>
-<p class="p7">&lt;html&gt;</p>
-<p class="p7">&lt;body&gt;</p>
-<p class="p7">&lt;img src="assets/img/ours.jpeg"&gt;</p>
-<p class="p7">&lt;/html&gt;</p>
-<p class="p7">&lt;/body&gt;</p>
+<p class="p6">Monochasse</p>
+<p class="p7"><br></p>
+<p class="p6">&lt;html&gt;</p>
+<p class="p6">&lt;body&gt;</p>
+<p class="p7"><br></p>
+<p class="p6">new&lt;img src="assets/img/ours.jpeg"&gt;</p>
+<p class="p6">&lt;/html&gt;</p>
+<p class="p6">&lt;/body&gt;</p>
 <p class="p4"><span class="s1"><b></b></span><br></p>
 <p class="p5"><b></b><br></p>
 <p class="p1"><b>Titre</b></p>
@@ -67,14 +66,14 @@ tags:
 <p class="p5"><br></p>
 <p class="p2"><a href="https://www.digikey.fr/fr/products/detail/panasonic-electric-works/DK1A1B-L2-3V/647245">https://www.digikey.fr/fr/products/detail/panasonic-electric-works/DK1A1B-L2-3V/647245</a></p>
 <p class="p5"><br></p>
-<p class="p9"><a href="http://apple.com">👨🏻‍💻<span class="s5"> apple</span></a></p>
+<p class="p8"><a href="http://apple.com">👨🏻‍💻<span class="s5"> apple</span></a></p>
 <p class="p5"><br></p>
 <p class="p5"><br></p>
 <table cellspacing="0" cellpadding="0" class="t1">
 <tbody>
 <tr>
 <td valign="top" class="td1">
-<p class="p10"><b>Colonne 1</b></p>
+<p class="p9"><b>Colonne 1</b></p>
 </td>
 <td valign="top" class="td1">
 <p class="p2"><b>colonne 2</b></p>

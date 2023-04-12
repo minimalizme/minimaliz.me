@@ -48,34 +48,20 @@ gold color: #947B37
 }
 
 /* Liste à puce */
-.ul1 {
+.li2.s4 {
     margin-left: 50px !important;
 }
 
 /* Liste à tirets */
-.ul2 {
+.li2.s5 {
     margin-left: 50px !important
     list-style-type: square;
 }
-
-/* Liste non cochée */
-.ul3 {
-    margin-left: 50px !important
-    list-style-type: url('checkbox-unchecked.svg');
-}
-
-/* Liste cochée */
-.ul3 {
-    margin-left: 50px !important
-    list-style-type: url('checkbox-checked.svg');
-}
-
 
 /* Liste numéroté */
 .ol1 {
     margin-left: 50px !important;
 }
-
 
 .Apple-tab-span {
     margin-left: 50px !important;

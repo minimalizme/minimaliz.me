@@ -68,17 +68,8 @@ gold color: #947B37
 	text-decoration: line-through;
 }
 
-/* Liste non cochée */
-.ul1 {
-    list-style-image: url('checkbox-unchecked.svg') !important;
-    margin-left: 50px !important;
-}
 
-/* Liste cochée */
-.ul2 {
-    list-style-image: url('checkbox-checked.svg') !important;
-    margin-left: 50px !important;
-}
+
 
 /* Liste à puce */
 .ul3 {

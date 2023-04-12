@@ -80,18 +80,35 @@ tags:
 <tbody>
 <tr>
 <td valign="top" class="td1">
-<p class="p9">head 1</p>
+<p class="p9">Colonne 1</p>
 </td>
 <td valign="top" class="td1">
-<p class="p2">head 2<span class="Apple-converted-space"> </span></p>
+<p class="p2">colonne 2</p>
+</td>
+<td valign="top" class="td1">
+<p class="p2">colonne 3</p>
 </td>
 </tr>
 <tr>
 <td valign="top" class="td1">
-<p class="p2">value 1</p>
+<p class="p2">raw1</p>
 </td>
 <td valign="top" class="td1">
-<p class="p10">value 2</p>
+<p class="p2">raw 1</p>
+</td>
+<td valign="top" class="td1">
+<p class="p2">raw 1</p>
+</td>
+</tr>
+<tr>
+<td valign="top" class="td1">
+<p class="p2">raw2<span class="Apple-converted-space"> </span></p>
+</td>
+<td valign="top" class="td1">
+<p class="p2">raw 2</p>
+</td>
+<td valign="top" class="td1">
+<p class="p2">raw 2</p>
 </td>
 </tr>
 </tbody>
@@ -100,13 +117,13 @@ tags:
 <p class="p5"><br></p>
 <p class="p2"><span class="Apple-tab-span">	</span>retrait dans une phrase longue qui peut faire un long paragraphe Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit.</p>
 <p class="p5"><br></p>
-<p class="p11">Quam quidem partem accusationis admiratus sum et moleste tuli potissimum esse Atratino datam. Neque enim decebat neque aetas illa postulabat neque, id quod animadvertere poteratis, pudor patiebatur optimi adulescentis in tali illum oratione versari. Vellem aliquis ex vobis robustioribus hunc male dicendi locum suscepisset; aliquanto liberius et fortius et magis more nostro refutaremus istam male dicendi licentiam. Tecum, Atratine, agam lenius, quod et pudor tuus moderatur orationi meae et meum erga te parentemque tuum beneficium tueri debeo.</p>
+<p class="p10">Quam quidem partem accusationis admiratus sum et moleste tuli potissimum esse Atratino datam. Neque enim decebat neque aetas illa postulabat neque, id quod animadvertere poteratis, pudor patiebatur optimi adulescentis in tali illum oratione versari. Vellem aliquis ex vobis robustioribus hunc male dicendi locum suscepisset; aliquanto liberius et fortius et magis more nostro refutaremus istam male dicendi licentiam. Tecum, Atratine, agam lenius, quod et pudor tuus moderatur orationi meae et meum erga te parentemque tuum beneficium tueri debeo.</p>
 <p class="p5"><br></p>
 <p class="p2">Hae duae provinciae bello quondam piratico catervis mixtae praedonum a Servilio pro consule missae sub iugum factae sunt vectigales. et hae quidem regiones velut in prominenti terrarum lingua positae ob orbe eoo monte Amano disparantur.</p>
 <p class="p5"><br></p>
-<p class="p12">Metuentes igitur idem latrones Lycaoniam magna parte campestrem cum se inpares nostris fore congressione stataria documentis frequentibus scirent, tramitibus deviis petivere Pamphyliam diu quidem intactam sed timore populationum et caedium, milite per omnia diffuso propinqua, magnis undique praesidiis conmunitam.</p>
+<p class="p11">Metuentes igitur idem latrones Lycaoniam magna parte campestrem cum se inpares nostris fore congressione stataria documentis frequentibus scirent, tramitibus deviis petivere Pamphyliam diu quidem intactam sed timore populationum et caedium, milite per omnia diffuso propinqua, magnis undique praesidiis conmunitam.</p>
 <p class="p5"><br></p>
-<p class="p13">Batnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta.</p>
+<p class="p12">Batnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta.</p>
 <p class="p5"><br></p>
 <p class="p5"><b></b><br></p>
 <p class="p5"><b></b><br></p>

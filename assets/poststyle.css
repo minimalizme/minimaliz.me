@@ -9,66 +9,9 @@ gold color: #947B37
 
 /* Titre */
 .p1 {
-	font-size: 1.5rem !important;
-	font-weight: 100 !important;
+	font-size: 1.2rem !important;
+	font-weight: 200 !important;
 }
-
-/* Sous-titre */
-.p6 {
-    font-size: 1.2rem !important;
-	font-weight: 100 !important;
-}
-
-/* Corps */
-.p2 {
-	font-size: 1rem !important;
-	font-weight: 400 !important;
-}
-
-/* texte centré */
-.p9 {
-	text-align: center !important;
-}
-
-/* texte à droite */
-.p10 {
-	text-align: right !important;
-}
-
-/* texte justifié */
-.p11 {
-    text-align: justify;
-    text-justify: auto;
-}
-
-/* texte indenté */
-.p12 {
-    margin-left: 50px;
-}
-
-
-.p3 {
-	font-size: !important;
-	font-weight: !important;
-}
-
-
-.p4 {
-	font-size: !important;
-	font-weight: !important;
-}
-
-/* Souligné */
-.s2 {
-	text-decoration: underline !important;
-}
-
-/* Barré */
-.s3 {
-	text-decoration: underline !important;
-}
-
-
 
 
 /* Liste à puce */

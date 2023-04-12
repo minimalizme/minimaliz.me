@@ -25,6 +25,27 @@ gold color: #947B37
 	font-weight: 400 !important;
 }
 
+/* texte centré */
+.p9 {
+	text-align: center !important;
+}
+
+/* texte à droite */
+.p10 {
+	text-align: right !important;
+}
+
+/* texte justifié */
+.p11 {
+    text-align: justify;
+    text-justify: auto;
+}
+
+/* texte indenté */
+.p12 {
+    margin-left: 50px;
+}
+
 
 .p3 {
 	font-size: !important;

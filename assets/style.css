@@ -387,6 +387,22 @@ post p{
     line-height: 1.625; /* Hauteur de ligne pour l'espacement vertical du texte */
 }
 
+
+post a {
+    font-family: 'Montserrat';
+    font-weight: 100!important;
+    color: #161616;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .05em;
+    margin: 5px 20px 5px 20px;
+}
+
+post a:hover {
+    color: #947B37;
+}
+
 /* Titre */
 .p1 {
     font-size: 1.2rem !important;

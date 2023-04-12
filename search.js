@@ -79,3 +79,23 @@ document.addEventListener("DOMContentLoaded", function() {
       firstImage.style.display = "none";
     }
 });
+
+
+//Copy text in <code> ... </code>
+document.addEventListener('DOMContentLoaded', function () {
+       document.querySelectorAll('code').forEach(function (codeElement) {
+           codeElement.addEventListener('click', function (event) {
+               if (event.target === codeElement || event.target === codeElement.querySelector('::after')) {
+                   const textarea = document.createElement('textarea');
+                   textarea.value = codeElement.textContent;
+                   textarea.style.position = 'absolute';
+                   textarea.style.left = '-9999px';
+                   document.body.appendChild(textarea);
+                   textarea.select();
+                   document.execCommand('copy');
+                   document.body.removeChild(textarea);
+                   alert('Code copié dans le presse-papiers !');
+               }
+           });
+       });
+});

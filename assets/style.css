@@ -452,3 +452,36 @@ th {
 tr:nth-child(even) {
     background-color: #f9f8f5;
 }
+
+
+/* Balise "code" */
+
+code {
+        display: block;
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 4px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        line-height: 1.6;
+        white-space: pre-wrap;
+        position: relative;
+    }
+
+    code::after {
+        content: 'Copier';
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: #007ACC;
+        color: white;
+        padding: 2px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    code:hover::after {
+        background-color: #0066B3;
+    }

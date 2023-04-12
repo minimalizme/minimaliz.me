@@ -33,11 +33,7 @@ tags:
 <p class="p2">Liste coché :</p>
 <ul class="ul1">
 <li class="li2">non coché</li>
-</ul>
-<ul class="ul2">
 <li class="li2">non coché</li>
-</ul>
-<ul class="ul1">
 <li class="li2">coché</li>
 </ul>
 <p class="p5"><b></b><br></p>
@@ -49,14 +45,14 @@ tags:
 </ol>
 <p class="p5"><b></b><br></p>
 <p class="p2">Liste à puce :</p>
-<ul class="ul3">
+<ul class="ul2">
 <li class="li2"><span class="s4"></span>premier</li>
 <li class="li2"><span class="s4"></span>deuxième</li>
 <li class="li2"><span class="s4"></span>troisieme</li>
 </ul>
 <p class="p5"><br></p>
 <p class="p2">Liste avec tirets :</p>
-<ul class="ul4">
+<ul class="ul3">
 <li class="li2"><span class="s5"></span>premier</li>
 <li class="li2"><span class="s5"></span>deuxième</li>
 <li class="li2"><span class="s5"></span>troisieme</li>
@@ -70,8 +66,10 @@ tags:
 </ol>
 <p class="p5"><br></p>
 <p class="p2">Liste coché :</p>
-<ul class="ul2">
+<ul class="ul1">
 <li class="li2">non coché</li>
+</ul>
+<ul class="ul4">
 <li class="li2">non coché</li>
 </ul>
 <ul class="ul1">
@@ -79,7 +77,7 @@ tags:
 </ul>
 <p class="p5"><br></p>
 <p class="p2">Liste avec tirets :</p>
-<ul class="ul4">
+<ul class="ul3">
 <li class="li2"><span class="s5"></span>premier</li>
 <li class="li2"><span class="s5"></span>deuxième</li>
 <li class="li2"><span class="s5"></span>troisieme</li>

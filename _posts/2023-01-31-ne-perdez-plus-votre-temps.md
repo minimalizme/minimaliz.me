@@ -9,7 +9,10 @@ tags:
 
 <p class="p3"><img src="{{ "assets/img/NeCulpabilizerPlusDeVousDivertir.jpg" | relative_url }}" alt="NeCulpabilizerPlusDeVousDivertir.jpg"></p>
 <p class="p4"><br></p>
-<p class="p5"><b>Rien n’est « inutile » ou « perte de temps » ! Tout est une question de point de vue !</b></p>
+<div id="blockquote">
+<p class="p2">« Rien n’est « inutile » ou « perte de temps » ! Tout est une question de point de vue ! »</p>
+<p class="p2"><b>Ben</b></p>
+</div>
 <p class="p4"><br></p>
 <p class="p2">Le divertissement est un vaste sujet sur lequel il y’aurait beaucoup à dire, cependant j’aimerais m’arrêter ici sur la notion de perte de temps.</p>
 <p class="p4"><br></p>

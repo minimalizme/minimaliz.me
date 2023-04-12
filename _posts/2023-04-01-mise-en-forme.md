@@ -19,7 +19,7 @@ tags:
 <p class="p5"><b></b><br></p>
 <p class="p1"><b>Titre</b></p>
 <p class="p5"><b></b><br></p>
-<p class="p2">Dans un corps de texte le <b>gras</b> <i>l’italique</i> le <span class="s2">souligné</span></p>
+<p class="p2">Dans un corps de texte le <b>gras</b> <i>l’italique</i> le souligné</p>
 <p class="p5"><b></b><br></p>
 <p class="p5"><b></b><br></p>
 <p class="p2">Liste numéroté :</p>
@@ -31,9 +31,9 @@ tags:
 <p class="p5"><b></b><br></p>
 <p class="p2">Liste à puce :</p>
 <ul class="ul1">
-<li class="li2"><span class="s3"></span>premier</li>
-<li class="li2"><span class="s3"></span>deuxième</li>
-<li class="li2"><span class="s3"></span>troisieme</li>
+<li class="li2"><span class="s2"></span>premier</li>
+<li class="li2"><span class="s2"></span>deuxième</li>
+<li class="li2"><span class="s2"></span>troisieme</li>
 </ul>
 <p class="p5"><br></p>
 <p class="p5"><br></p>
@@ -41,7 +41,7 @@ tags:
 <p class="p5"><br></p>
 <p class="p2"><a href="https://www.digikey.fr/fr/products/detail/panasonic-electric-works/DK1A1B-L2-3V/647245">https://www.digikey.fr/fr/products/detail/panasonic-electric-works/DK1A1B-L2-3V/647245</a></p>
 <p class="p5"><br></p>
-<p class="p8"><a href="http://apple.com">👨🏻‍💻<span class="s4"> apple</span></a></p>
+<p class="p8"><a href="http://apple.com">👨🏻‍💻<span class="s3"> apple</span></a></p>
 <p class="p5"><br></p>
 <p class="p5"><br></p>
 <table cellspacing="0" cellpadding="0" class="t1">

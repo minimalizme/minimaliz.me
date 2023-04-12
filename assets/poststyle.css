@@ -49,7 +49,7 @@ gold color: #947B37
 
 /* Liste non cochée */
 .ul1 {
-    list-style-type: url('checkbox-unchecked.svg');
+    list-style-type: square;
 }
 
 /* Liste cochée */
@@ -64,8 +64,8 @@ gold color: #947B37
 
 /* Liste à tirets */
 .ul4 {
-    margin-left: 50px !important
-    list-style-type: square;
+    margin-left: 50px !important;
+    list-style-type: square !important;
 }
 
 /* Liste numéroté */

@@ -83,19 +83,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Copy text in <code> ... </code>
 document.addEventListener('DOMContentLoaded', function () {
-       document.querySelectorAll('code').forEach(function (codeElement) {
-           codeElement.addEventListener('click', function (event) {
-               if (event.target === codeElement || event.target === codeElement.querySelector('::after')) {
-                   const textarea = document.createElement('textarea');
-                   textarea.value = codeElement.textContent;
-                   textarea.style.position = 'absolute';
-                   textarea.style.left = '-9999px';
-                   document.body.appendChild(textarea);
-                   textarea.select();
-                   document.execCommand('copy');
-                   document.body.removeChild(textarea);
-                   alert('Code copié dans le presse-papiers !');
-               }
-           });
-       });
-});
+        document.querySelectorAll('code').forEach(function (codeElement) {
+            const copyButton = document.createElement('span');
+            copyButton.textContent = 'Copier';
+            copyButton.style.position = 'absolute';
+            copyButton.style.top = '5px';
+            copyButton.style.right = '5px';
+            copyButton.style.backgroundColor = '#007ACC';
+            copyButton.style.color = 'white';
+            copyButton.style.padding = '2px 8px';
+            copyButton.style.borderRadius = '4px';
+            copyButton.style.cursor = 'pointer';
+            copyButton.style.fontSize = '14px';
+            copyButton.onmouseenter = function () {
+                copyButton.style.backgroundColor = '#0066B3';
+            };
+            copyButton.onmouseleave = function () {
+                copyButton.style.backgroundColor = '#007ACC';
+            };
+            copyButton.onclick = function () {
+                const textarea = document.createElement('textarea');
+                textarea.value = codeElement.textContent;
+                textarea.style.position = 'absolute';
+                textarea.style.left = '-9999px';
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                alert('Code copié dans le presse-papiers !');
+            };
+            codeElement.appendChild(copyButton);
+        });
+    });

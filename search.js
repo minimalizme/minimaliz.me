@@ -80,6 +80,29 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+//Initialize Hightlight.js
+hljs.highlightAll();
 
 //Copy text in <code> ... </code>
+function copyToClipboard(element) {
+  const tempTextArea = document.createElement("textarea");
+  tempTextArea.value = element.textContent;
+  document.body.appendChild(tempTextArea);
+  tempTextArea.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempTextArea);
+  alert("Code copié dans le presse-papiers !");
+}
 
+document.querySelectorAll('pre.hljs').forEach(function (codeElement) {
+  const copyButton = document.createElement('button');
+  copyButton.textContent = 'Copier';
+  copyButton.style.position = 'absolute';
+  copyButton.style.top = '0';
+  copyButton.style.right = '0';
+  copyButton.addEventListener('click', function () {
+    copyToClipboard(codeElement.querySelector('code'));
+  });
+  codeElement.style.position = 'relative';
+  codeElement.appendChild(copyButton);
+});

@@ -403,6 +403,11 @@ post a:hover {
     color: #947B37;
 }
 
+post iframe {
+    display: block;
+    margin: 0 auto;
+  }
+
 /* Titre */
 .p1 {
     font-size: 1.2rem !important;

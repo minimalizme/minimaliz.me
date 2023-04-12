@@ -49,8 +49,20 @@ gold color: #947B37
 
 /* Liste non cochée */
 .ul1 {
+    list-style-type: none;
     list-style-image: url('checkbox-unchecked.svg') !important;
     margin-left: 50px !important;
+}
+
+.ul1 .li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('checkbox-unchecked.svg') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* Liste cochée */
@@ -104,8 +116,6 @@ tr:nth-child(even) {
 tr:hover {
 	background-color: #eaeaea;
 }
-
-
 
 
 

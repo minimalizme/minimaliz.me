@@ -11,7 +11,7 @@ tags:
 <p class="p4"><span class="s1"><b></b></span><br></p>
 <p class="p1"><b>Titre</b></p>
 <p class="p5"><b></b><br></p>
-<p class="p2"><b>Sous-titre</b></p>
+<p class="p6"><b>Sous-titre</b></p>
 <p class="p5"><b></b><br></p>
 <p class="p2"><b>Titre-secondaire</b></p>
 <p class="p5"><b></b><br></p>
@@ -19,7 +19,7 @@ tags:
 <p class="p5"><b></b><br></p>
 <p class="p2">Corps de texte</p>
 <p class="p5"><br></p>
-<p class="p6"><span class="s1"><b>Monochasse</b></span></p>
+<p class="p7"><span class="s1"><b>Monochasse</b></span></p>
 <p class="p4"><span class="s1"><b></b></span><br></p>
 <p class="p5"><b></b><br></p>
 <p class="p2">Dans un corps de texte le <b>gras</b> <i>l’italique</i> le <span class="s2">souligné</span> et le <span class="s3">barré</span></p>

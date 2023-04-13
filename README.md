@@ -1,2 +1,2 @@
 
-Minimaliz.me Blog V2.0
+Minimaliz.me Blog

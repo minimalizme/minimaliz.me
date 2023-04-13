@@ -12,6 +12,8 @@ body {
     max-width: 1040px;
     margin: 0 auto;
     position: relative;
+    padding-left:35px;
+    padding-right:35px;
     -webkit-font-smoothing: antialiased;
     word-wrap: break-word;
 }
@@ -252,7 +254,9 @@ footer {
 
 @media (max-width: 768px) {
     body {
-        margin:30px;
+        margin:35px;
+        padding-left:0;
+        padding-right:0;
     }
     main {
         flex-direction: column;

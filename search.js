@@ -1,3 +1,4 @@
+//Pagination + search bar and tag filter
 const postsPerPage = 5;
 let currentPage = 1;
 let allPosts = $('.post');
@@ -80,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+//Init Hightlight.js and add copy button
 document.addEventListener("DOMContentLoaded", function(event) {
             // Initialisez Highlight.js
             hljs.highlightAll();

@@ -6,8 +6,6 @@
     text-decoration: none;
 }
 
-
-/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     background-color: #FFF;
@@ -17,6 +15,8 @@ body {
     -webkit-font-smoothing: antialiased;
     word-wrap: break-word;
 }
+
+/* -------------------- Header content ------------------------ */
 
 header {
     display: flex;
@@ -53,24 +53,23 @@ header {
     margin: 0;
     text-transform: uppercase;
     font-weight: 400; /* Définit l'épaisseur de la police */
-    
-        color: #404040; /* Couleur du texte */
-        text-align: center; /* Centrer le texte horizontalement */
-        line-height: 1; /* Hauteur de ligne pour l'espacement vertical du texte */
-        margin-bottom: 50px;
+    color: #404040; /* Couleur du texte */
+    text-align: center; /* Centrer le texte horizontalement */
+    line-height: 1; /* Hauteur de ligne pour l'espacement vertical du texte */
+    margin-bottom: 50px;
 }
 
 nav {
     display: flex;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        border-top: 1px solid #ebebeb;
-        border-bottom: 1px solid #ebebeb;
-        padding: 10px 0;
-        width: 100%;
-        left: 0;
-        z-index: 1;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
 }
 
 nav a {
@@ -88,7 +87,8 @@ nav a:hover {
     color: #947B37;
 }
 
-/* Contenu principal */
+/* -------------------- Main content ------------------------ */
+
 main {
     display: flex;
     justify-content: space-between;
@@ -174,7 +174,30 @@ p.summary {
     margin-bottom: 20px !important;
 }
 
-/* Sidebar */
+.pagination {
+    font-family: 'Montserrat';
+    font-weight: 100!important;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .05em;
+    margin: 5px 20px 5px 20px;
+}
+
+.pagination a{
+    color: #161616;
+}
+
+.pagination a:link {
+    color: #404040;
+}
+
+.pagination a:hover {
+    color: #947B37;
+}
+
+/* -------------------- Sidebar content ------------------------ */
+
 .sidebar {
     flex: 1;
 }
@@ -217,28 +240,7 @@ p.info {
     margin: 0 auto 20px;
 }
 
-
-.pagination {
-    font-family: 'Montserrat';
-    font-weight: 100!important;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: .8rem;
-    letter-spacing: .05em;
-    margin: 5px 20px 5px 20px;
-}
-
-.pagination a{
-    color: #161616;
-}
-
-.pagination a:link {
-    color: #404040;
-}
-
-.pagination a:hover {
-    color: #947B37;
-}
+/* -------------------- Footer content ------------------------ */
 
 footer {
     margin-top: 50px;
@@ -246,7 +248,8 @@ footer {
     height:100px;
 }
 
-/* Responsive */
+/* -------------------- Responsive ------------------------ */
+
 @media (max-width: 768px) {
     body {
         margin:30px;
@@ -261,49 +264,48 @@ footer {
     }
 }
 
-
 /*SEARCH BAR*/
 /* Conteneur pour la barre de recherche */
 .search-container {
-  display: flex;
-  justify-content: center; /* Centre la barre de recherche horizontalement */
-  margin-bottom: 50px; /* Ajoute de l'espace sous la barre de recherche */
+    display: flex;
+    justify-content: center; /* Centre la barre de recherche horizontalement */
+    margin-bottom: 50px; /* Ajoute de l'espace sous la barre de recherche */
 }
 
 /* Barre de recherche */
 #search-input {
-  width: 100%; /* Largeur de la barre de recherche */
-  max-width: 600px; /* Largeur maximale de la barre de recherche */
-  padding: 10px 0px 10px 20px; /* Espacement interne de la barre de recherche */
-  border: 1px solid #ccc; /* Bordure de la barre de recherche */
-  border-radius: 5px; /* Arrondit les coins de la barre de recherche */
-  font-size: 16px; /* Taille du texte dans la barre de recherche */
-  outline: none; /* Supprime l'effet de mise au point par défaut du navigateur */
+    width: 100%; /* Largeur de la barre de recherche */
+    max-width: 600px; /* Largeur maximale de la barre de recherche */
+    padding: 10px 0px 10px 20px; /* Espacement interne de la barre de recherche */
+    border: 1px solid #ccc; /* Bordure de la barre de recherche */
+    border-radius: 5px; /* Arrondit les coins de la barre de recherche */
+    font-size: 16px; /* Taille du texte dans la barre de recherche */
+    outline: none; /* Supprime l'effet de mise au point par défaut du navigateur */
 }
 
 /* Effet de mise au point pour la barre de recherche */
 #search-input:focus {
-  border-color: #947B37; /* Couleur de la bordure lorsque la barre de recherche est mise au point */
-  box-shadow: 0 0 3px rgba(0, 123, 255, 0.25); /* Ombre portée lorsque la barre de recherche est mise au point */
+    border-color: #947B37; /* Couleur de la bordure lorsque la barre de recherche est mise au point */
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.25); /* Ombre portée lorsque la barre de recherche est mise au point */
 }
 
 /* Effet de survol pour la barre de recherche */
 #search-input:hover {
-  border-color: #947B37; /* Couleur de la bordure lorsque la barre de recherche est survolée */
+    border-color: #947B37; /* Couleur de la bordure lorsque la barre de recherche est survolée */
 }
 
 /* TAG LIST*/
 /* Conteneur pour la liste des tags */
 #tag-list {
-  display: flex;
-  flex-direction: column; /* Organise les tags les uns en dessous des autres */
-  align-items: flex-start; /* Alignement des tags à gauche */
-  margin-bottom: 20px; /* Ajoute de l'espace sous la liste des tags */
+    display: flex;
+    flex-direction: column; /* Organise les tags les uns en dessous des autres */
+    align-items: flex-start; /* Alignement des tags à gauche */
+    margin-bottom: 20px; /* Ajoute de l'espace sous la liste des tags */
 }
 
 /* Style pour les cases à cocher et les labels */
 #tag-list input[type=checkbox] {
-  display: none; /* Masque les cases à cocher par défaut */
+    display: none; /* Masque les cases à cocher par défaut */
 }
 
 #tag-list label {
@@ -313,40 +315,39 @@ footer {
     font-weight: 400; /* Définit l'épaisseur de la police */
     color: #947B37; /* Couleur du texte */
     text-transform: uppercase;
-    
-  display: inline-block;
-  padding: 1px 0px 1px 35px; /* Espacement interne pour les labels */
-  margin-bottom: 8px; /* Espacement entre les labels */
-  border-radius: 12px; /* Arrondit les coins des labels */
-  cursor: pointer; /* Change le curseur en main lors du survol des labels */
-  background-color: transparent; /* Couleur d'arrière-plan des labels */
-  position: relative; /* Nécessaire pour positionner les cases à cocher personnalisées */
+    display: inline-block;
+    padding: 1px 0px 1px 35px; /* Espacement interne pour les labels */
+    margin-bottom: 8px; /* Espacement entre les labels */
+    border-radius: 12px; /* Arrondit les coins des labels */
+    cursor: pointer; /* Change le curseur en main lors du survol des labels */
+    background-color: transparent; /* Couleur d'arrière-plan des labels */
+    position: relative; /* Nécessaire pour positionner les cases à cocher personnalisées */
 }
 
 /* Cases à cocher personnalisées */
 #tag-list label:before {
-  content: ""; /* Contenu vide pour générer l'élément */
-  display: inline-block;
-  width: 20px; /* Largeur de la case à cocher personnalisée */
-  height: 20px; /* Hauteur de la case à cocher personnalisée */
-  background-image: url('checkbox-unchecked.svg'); /* Image de la case à cocher non cochée */
-  background-size: contain; /* Redimensionne l'image pour qu'elle s'adapte à la taille de l'élément */
-  background-repeat: no-repeat; /* Empêche la répétition de l'image */
-  margin-right: 8px; /* Espacement entre la case à cocher personnalisée et le texte du label */
-  vertical-align: middle; /* Alignement vertical avec le texte du label */
-  position: absolute; /* Positionnement absolu par rapport au label */
-  left: 4px; /* Positionnement horizontal de la case à cocher personnalisée */
-  top: 50%; /* Positionnement vertical de la case à cocher personnalisée */
-  transform: translateY(-50%); /* Centre la case à cocher personnalisée verticalement */
+    content: ""; /* Contenu vide pour générer l'élément */
+    display: inline-block;
+    width: 20px; /* Largeur de la case à cocher personnalisée */
+    height: 20px; /* Hauteur de la case à cocher personnalisée */
+    background-image: url('checkbox-unchecked.svg'); /* Image de la case à cocher non cochée */
+    background-size: contain; /* Redimensionne l'image pour qu'elle s'adapte à la taille de l'élément */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    margin-right: 8px; /* Espacement entre la case à cocher personnalisée et le texte du label */
+    vertical-align: middle; /* Alignement vertical avec le texte du label */
+    position: absolute; /* Positionnement absolu par rapport au label */
+    left: 4px; /* Positionnement horizontal de la case à cocher personnalisée */
+    top: 50%; /* Positionnement vertical de la case à cocher personnalisée */
+    transform: translateY(-50%); /* Centre la case à cocher personnalisée verticalement */
 }
 
 /* Style pour les cases à cocher cochées */
 #tag-list input[type=checkbox]:checked + label:before {
-  background-image: url('checkbox-checked.svg'); /* Image de la case à cocher cochée */
+    background-image: url('checkbox-checked.svg'); /* Image de la case à cocher cochée */
 }
 
 
-/*CSS POST LAYOUT FIXED*/
+/* -------------------- Post Layout content ------------------------ */
 
 post {
     
@@ -477,6 +478,9 @@ tr:nth-child(even) {
     color: black;
     font-weight: 900;
 }
+
+
+/* -------------------- Theme Highlight ------------------------ */
 
 /*
 Atom One Dark by Daniel Gamage

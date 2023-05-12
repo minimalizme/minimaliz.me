@@ -29,8 +29,6 @@ tags:
 <p class="p4"><br></p>
 <p class="p2">Sur votre Mac, créez un raccourci qui lit le fichier texte et l’affiche dans une notification ou l’utilise dans une autre application. De cette manière, vous pouvez facilement analyser et suivre vos progrès en matière d'activité physique à partir de votre Mac.</p>
 <p class="p4"><br></p>
-<p class="p2">Conclusion: En utilisant les Raccourcis Apple et iCloud, il est possible de créer une base de données simple et partagée entre différents appareils Apple. Cette technique est particulièrement utile pour ceux qui cherchent à exploiter les données disponibles uniquement sur certaines plateformes, comme Apple Health, et à les utiliser sur d'autres appareils pour une analyse approfondie. N'hésitez pas à expérimenter et à adapter cette méthode à vos propres besoins et projets.</p>
-<p class="p4"><br></p>
-<p class="p2">Vous trouverez les deux raccourcis demo en suivant ce lien.</p>
+<p class="p2">En utilisant les Raccourcis Apple et iCloud, il est possible de créer une base de données simple et partagée entre différents appareils Apple. Cette technique est particulièrement utile pour ceux qui cherchent à exploiter les données disponibles uniquement sur certaines plateformes, comme Apple Health, et à les utiliser sur d'autres appareils pour une analyse approfondie. N'hésitez pas à expérimenter et à adapter cette méthode à vos propres besoins et projets.</p>
 
 

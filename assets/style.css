@@ -231,7 +231,7 @@ p.info {
     line-height: 1;
     font-weight: 400; /* Définit l'épaisseur de la police */
     color: #404040; /* Couleur du texte */
-    text-align:center;
+    text-align:justify;
     margin: 20px 0 20px 0px;
 }
 

@@ -244,6 +244,11 @@ p.info {
 
 /* -------------------- Comments content ------------------------ */
 
+
+.commentbox {
+    margin-top: 50px;
+}
+
 .branding {
     display: none!important;
 }

@@ -5,5 +5,10 @@
     {{ content }}
     <div class="commentbox"></div>
     <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-    <script>commentBox('5746747552825344-proj')</script>
+    <script>commentBox('5746747552825344-proj', {
+        sortOrder: 'newest', // specify the default comment sort order ("best", "newest", "oldest")
+        backgroundColor: null, // default transparent
+        textColor: null, // default black
+        subtextColor: null, // default grey
+    });</script>
 </post>

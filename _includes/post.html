@@ -15,11 +15,11 @@
     });</script>
     <script>
         function openCommentSection() {
-        var x = document.getElementById("commentbox");
-        var branding = document.getElementById("branding");
+        var x = document.getElementsByClassName("commentbox");
+        var branding = document.getElementsByClassName("branding");
         if (x.style.display === "none") {
           x.style.display = "block";
-          branding.style.display = "none";
+          branding.style.display = "none!important";
         } else {
           x.style.display = "none";
         }

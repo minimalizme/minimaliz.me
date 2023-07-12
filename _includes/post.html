@@ -3,4 +3,7 @@
     <p class="post-info">{{ page.date | date: "%d %B %Y" }} | <span style="color: #947B37;">{{ page.tags | join: ' - ' }}</span></p>
     <div class="separator"></div>
     {{ content }}
+    <div class="commentbox"></div>
+    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+    <script>commentBox('5746747552825344-proj')</script>
 </post>

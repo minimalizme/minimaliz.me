@@ -4,7 +4,7 @@
     <div class="separator"></div>
     {{ content }}
     
-    <button onclick="openCommentSection()">Voir les commentaires</button>
+    
     <div class="commentbox"></div>
     <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
     <script>commentBox('5746747552825344-proj', {
@@ -13,14 +13,5 @@
         textColor: null, // default black
         subtextColor: null, // default grey
     });</script>
-    <script>
-        function openCommentSection() {
-        var x = document.getElementById("commentbox");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-          
-        }
-        }</script>
+    
 </post>

@@ -242,6 +242,13 @@ p.info {
     margin: 0 auto 20px;
 }
 
+/* -------------------- Comments content ------------------------ */
+
+.branding {
+    display: none!important;
+}
+
+
 /* -------------------- Footer content ------------------------ */
 
 footer {

@@ -1,3 +1,4 @@
 title: minimaliz.me
-
+plugins:
+  - jekyll-feed
   

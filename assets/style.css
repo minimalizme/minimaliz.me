@@ -248,6 +248,10 @@ p.info {
     display: none!important;
 }
 
+button.btn.primary-button.busy, button.btn.primary-button:focus:not(:disabled), button.btn.primary-button:hover:not(:disabled) {
+color: #fff;
+background-color: #947B37;
+}
 
 /* -------------------- Footer content ------------------------ */
 

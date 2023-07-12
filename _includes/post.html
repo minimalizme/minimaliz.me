@@ -3,6 +3,8 @@
     <p class="post-info">{{ page.date | date: "%d %B %Y" }} | <span style="color: #947B37;">{{ page.tags | join: ' - ' }}</span></p>
     <div class="separator"></div>
     {{ content }}
+    
+    <button onclick="openCommentSection()">Voir les commentaires</button>
     <div class="commentbox"></div>
     <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
     <script>commentBox('5746747552825344-proj', {
@@ -11,4 +13,15 @@
         textColor: null, // default black
         subtextColor: null, // default grey
     });</script>
+    <script>
+        function openCommentSection() {
+        var x = document.getElementById("commentbox");
+        var branding = document.getElementById("branding");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          branding.style.display = "none";
+        } else {
+          x.style.display = "none";
+        }
+      }</script>
 </post>

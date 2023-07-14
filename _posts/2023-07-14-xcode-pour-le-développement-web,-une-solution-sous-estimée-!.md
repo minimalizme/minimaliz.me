@@ -1,5 +1,5 @@
 ---
-title: Xcode pour le développement web : une solution sous-estimée
+title: Xcode pour le développement web, une solution sous-estimée !
 date: 2023-07-14
 author: Ben
 layout: layout_post

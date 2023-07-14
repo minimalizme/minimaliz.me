@@ -11,7 +11,7 @@ tags:
 <p class="p3"><img src="{{ "assets/img/XcodePourLeWeb.jpg" | relative_url }}" alt="XcodePourLeWeb.jpg"></p>
 <p class="p4"><br></p>
 <p class="p4"><br></p>
-<p class="p2">loin d'être un développeur professionnel, j'adore coder et développer toutes sortes de projets. Depuis l'âge de 11 ans, je crée des sites web, et si vous ne le savez pas encore, je suis un grand fan d'Apple. J'aime utiliser les outils proposés par défaut par la marque et explorer leurs potentialités, quitte à détourner des fonctionnalités pour qu'elles correspondent à mes besoins.</p>
+<p class="p2">Loin d'être un développeur professionnel, j'adore coder et développer toutes sortes de projets. Depuis l'âge de 11 ans, je crée des sites web, et si vous ne le savez pas encore, je suis un grand fan d'Apple. J'aime utiliser les outils proposés par défaut par la marque et explorer leurs potentialités, quitte à détourner des fonctionnalités pour qu'elles correspondent à mes besoins.</p>
 <p class="p4"><br></p>
 <p class="p2">J'ai longtemps utilisé Brackets pour coder. C'est un outil simple et assez léger qui permet de coder en HTML, CSS, JavaScript et PHP avec une bon système de "code complétion". De plus, il propose une multitude de plug-ins pour enrichir ses fonctionnalités. Cependant, Brackets n'est pas un outil nativement intégré à macOS et surtout, il ne permet pas le développement d'applications pour l'environnement Apple.</p>
 <p class="p4"><br></p>

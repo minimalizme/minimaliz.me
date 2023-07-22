@@ -1,6 +1,6 @@
 ---
 title: Ma stratégie de sauvegarde
-date: 2023-04-10
+date: 2023-07-22
 author: Ben
 layout: layout_post
 tags:

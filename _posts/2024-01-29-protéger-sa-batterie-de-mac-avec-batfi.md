@@ -1,6 +1,6 @@
 ---
 title: Protéger sa batterie de mac avec BatFi
-date: 2023-01-29
+date: 2024-01-29
 author: Ben
 layout: layout_post
 tags:
